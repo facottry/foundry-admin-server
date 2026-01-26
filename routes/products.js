@@ -81,4 +81,21 @@ router.get('/:id', auth(['ADMIN']), asyncHandler(async (req, res, next) => {
     sendSuccess(res, productDetail);
 }));
 
+// @route   POST /api/admin/products/:id/approve
+// @desc    Approve a pending product
+router.post('/:id/approve', auth(['ADMIN']), asyncHandler(async (req, res, next) => {
+    const product = await Product.findById(req.params.id);
+    if (!product) return sendError(next, 'NOT_FOUND', 'Product not found', 404);
+
+    if (product.status === 'approved') {
+        return sendError(next, 'BAD_REQUEST', 'Product is already approved', 400);
+    }
+
+    product.status = 'approved';
+    product.traffic_enabled = true; // Auto-enable traffic on approval
+    await product.save();
+
+    sendSuccess(res, { message: 'Product approved successfully', product });
+}));
+
 module.exports = router;

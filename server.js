@@ -12,6 +12,7 @@ app.use(cors());
 
 // DB Config
 const db = process.env.MONGO_URI || 'mongodb://localhost:27017/foundry';
+mongoose.set('strictQuery', false);
 
 // Routes
 app.use('/api/auth', require('./routes/auth')); // For Admin Login
