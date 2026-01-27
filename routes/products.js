@@ -9,6 +9,10 @@ const { asyncHandler, sendSuccess, sendError } = require('../utils/response');
 // @route   GET /api/admin/products
 // @desc    Get all products with stats
 router.get('/', auth(['ADMIN']), asyncHandler(async (req, res) => {
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+    const skip = (page - 1) * limit;
+
     const products = await Product.aggregate([
         { $match: { deleted_at: null } },
         {
@@ -39,14 +43,27 @@ router.get('/', auth(['ADMIN']), asyncHandler(async (req, res) => {
                 ratings_count: 1,
                 created_at: 1,
                 'owner.email': 1,
+                'owner.name': 1,
                 clicks_today: { $ifNull: ['$stats.clicks_24h', 0] },
                 clicks_lifetime: { $ifNull: ['$stats.clicks_total', 0] }
             }
         },
-        { $sort: { created_at: -1 } }
+        { $sort: { created_at: -1 } },
+        { $skip: skip },
+        { $limit: limit }
     ]);
 
-    sendSuccess(res, products);
+    const total = await Product.countDocuments({ deleted_at: null });
+
+    sendSuccess(res, {
+        products,
+        pagination: {
+            page,
+            limit,
+            total,
+            pages: Math.ceil(total / limit)
+        }
+    });
 }));
 
 // @route   GET /api/admin/products/:id
@@ -79,6 +96,60 @@ router.get('/:id', auth(['ADMIN']), asyncHandler(async (req, res, next) => {
     };
 
     sendSuccess(res, productDetail);
+}));
+
+// @route   GET /api/admin/products/:id/analytics
+// @desc    Get detailed analytics for a product
+router.get('/:id/analytics', auth(['ADMIN']), asyncHandler(async (req, res, next) => {
+    const ProductView = require('../models/ProductView');
+    const OutboundClick = require('../models/OutboundClick');
+
+    // Check product exists
+    const product = await Product.findById(req.params.id);
+    if (!product) return sendError(next, 'NOT_FOUND', 'Product not found', 404);
+
+    // Date range (default 30 days)
+    const days = 30;
+    const since = new Date();
+    since.setDate(since.getDate() - days);
+
+    // Aggregate Views by Day
+    const viewsByDay = await ProductView.aggregate([
+        { $match: { product_id: product._id, created_at: { $gte: since } } },
+        {
+            $group: {
+                _id: { $dateToString: { format: "%Y-%m-%d", date: "$created_at" } },
+                count: { $sum: 1 }
+            }
+        },
+        { $sort: { _id: 1 } }
+    ]);
+
+    // Aggregate Clicks by Day
+    const clicksByDay = await OutboundClick.aggregate([
+        { $match: { product_id: product._id, created_at: { $gte: since } } },
+        {
+            $group: {
+                _id: { $dateToString: { format: "%Y-%m-%d", date: "$created_at" } },
+                count: { $sum: 1 }
+            }
+        },
+        { $sort: { _id: 1 } }
+    ]);
+
+    // Top Countries
+    const topCountries = await ProductView.aggregate([
+        { $match: { product_id: product._id, created_at: { $gte: since } } },
+        { $group: { _id: "$country", count: { $sum: 1 } } },
+        { $sort: { count: -1 } },
+        { $limit: 10 }
+    ]);
+
+    sendSuccess(res, {
+        views_history: viewsByDay,
+        clicks_history: clicksByDay,
+        top_countries: topCountries
+    });
 }));
 
 // @route   POST /api/admin/products/:id/approve

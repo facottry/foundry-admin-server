@@ -89,7 +89,7 @@ router.get('/dashboard', auth(['ADMIN']), asyncHandler(async (req, res) => {
 // @route   GET /api/admin/kpis/overview
 // @desc    Platform scale metrics
 router.get('/overview', auth(['ADMIN']), asyncHandler(async (req, res) => {
-    const [userStats, productStats] = await Promise.all([
+    const [userStats, productStats, topRated, recent] = await Promise.all([
         User.aggregate([
             {
                 $group: {
@@ -123,16 +123,28 @@ router.get('/overview', auth(['ADMIN']), asyncHandler(async (req, res) => {
                     }
                 }
             }
-        ])
+        ]),
+        Product.find({ status: 'approved' })
+            .sort({ avg_rating: -1, ratings_count: -1 })
+            .limit(10)
+            .select('name avg_rating ratings_count'),
+        Product.find({ status: 'approved' })
+            .sort({ created_at: -1 })
+            .limit(10)
+            .select('name created_at categories')
     ]);
 
     const data = {
         users: userStats[0] || { totalUsers: 0, totalFounders: 0, totalCustomers: 0, totalAdmins: 0 },
-        products: productStats[0] || { totalProducts: 0, pendingProducts: 0, approvedProducts: 0, rejectedProducts: 0 }
+        products: productStats[0] || { totalProducts: 0, pendingProducts: 0, approvedProducts: 0, rejectedProducts: 0 },
+        topProductsByRating: topRated,
+        recentlyLaunched: recent
     };
 
     sendSuccess(res, data);
 }));
+
+
 
 // @route   GET /api/admin/kpis/traffic
 // @desc    Click analytics and traffic data
@@ -142,7 +154,7 @@ router.get('/traffic', auth(['ADMIN']), asyncHandler(async (req, res) => {
     const sevenDaysAgo = new Date(todayStart);
     sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
 
-    const [totalClicks, clicksToday, clicksLast7Days, topProducts] = await Promise.all([
+    const [totalClicks, clicksToday, clicksLast7Days, topProducts, topProductsByViews] = await Promise.all([
         OutboundClick.countDocuments(),
         OutboundClick.countDocuments({ created_at: { $gte: todayStart } }),
         OutboundClick.countDocuments({ created_at: { $gte: sevenDaysAgo } }),
@@ -178,7 +190,8 @@ router.get('/traffic', auth(['ADMIN']), asyncHandler(async (req, res) => {
         totalClicks,
         clicksToday,
         clicksLast7Days,
-        topProducts
+        topProducts,
+        topProductsByViews
     };
 
     sendSuccess(res, data);

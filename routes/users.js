@@ -9,7 +9,18 @@ const { asyncHandler, sendSuccess, sendError } = require('../utils/response');
 // @route   GET /api/admin/users
 // @desc    Get all users with stats
 router.get('/', auth(['ADMIN']), asyncHandler(async (req, res) => {
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+    const skip = (page - 1) * limit;
+    const role = req.query.role;
+
+    const matchStage = {};
+    if (role) {
+        matchStage.role = role;
+    }
+
     const users = await User.aggregate([
+        { $match: matchStage },
         {
             $lookup: {
                 from: 'products',
@@ -21,16 +32,29 @@ router.get('/', auth(['ADMIN']), asyncHandler(async (req, res) => {
         {
             $project: {
                 email: 1,
+                name: 1,
                 role: 1,
                 credits_balance: 1,
                 created_at: 1,
                 products_count: { $size: '$products' }
             }
         },
-        { $sort: { created_at: -1 } }
+        { $sort: { created_at: -1 } },
+        { $skip: skip },
+        { $limit: limit }
     ]);
 
-    sendSuccess(res, users);
+    const total = await User.countDocuments(matchStage);
+
+    sendSuccess(res, {
+        users,
+        pagination: {
+            page,
+            limit,
+            total,
+            pages: Math.ceil(total / limit)
+        }
+    });
 }));
 
 // @route   GET /api/admin/users/:id
