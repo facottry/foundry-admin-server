@@ -13,8 +13,34 @@ router.get('/', auth(['ADMIN']), asyncHandler(async (req, res) => {
     const limit = parseInt(req.query.limit) || 10;
     const skip = (page - 1) * limit;
 
+    const search = req.query.search || '';
+    const sortBy = req.query.sortBy || 'created_at';
+    const order = req.query.order === 'asc' ? 1 : -1;
+
+    // Build Match Stage
+    const matchStage = { deleted_at: null };
+    if (search) {
+        matchStage.$or = [
+            { name: { $regex: search, $options: 'i' } },
+            { tagline: { $regex: search, $options: 'i' } }
+        ];
+    }
+
+    // Build Sort Stage
+    const sortStage = {};
+    // Map frontend sort keys to DB fields if necessary, or use direct
+    // For computed fields like clicks, we might need to sort AFTER projection
+    // But for basic fields:
+    if (sortBy === 'clicks_lifetime') {
+        sortStage['clicks_lifetime'] = order; // This field is created in project
+    } else if (sortBy === 'clicks_today') {
+        sortStage['clicks_today'] = order;
+    } else {
+        sortStage[sortBy] = order;
+    }
+
     const products = await Product.aggregate([
-        { $match: { deleted_at: null } },
+        { $match: matchStage },
         {
             $lookup: {
                 from: 'users',
@@ -42,18 +68,20 @@ router.get('/', auth(['ADMIN']), asyncHandler(async (req, res) => {
                 avg_rating: 1,
                 ratings_count: 1,
                 created_at: 1,
+                owner_user_id: 1, // Keep original reference
+                'owner._id': 1,   // Keep looked-up ID
                 'owner.email': 1,
                 'owner.name': 1,
                 clicks_today: { $ifNull: ['$stats.clicks_24h', 0] },
                 clicks_lifetime: { $ifNull: ['$stats.clicks_total', 0] }
             }
         },
-        { $sort: { created_at: -1 } },
+        { $sort: sortStage },
         { $skip: skip },
         { $limit: limit }
     ]);
 
-    const total = await Product.countDocuments({ deleted_at: null });
+    const total = await Product.countDocuments(matchStage);
 
     sendSuccess(res, {
         products,
@@ -69,7 +97,7 @@ router.get('/', auth(['ADMIN']), asyncHandler(async (req, res) => {
 // @route   GET /api/admin/products/:id
 // @desc    Get product detail with full metrics
 router.get('/:id', auth(['ADMIN']), asyncHandler(async (req, res, next) => {
-    const product = await Product.findById(req.params.id).populate('owner_user_id', 'email');
+    const product = await Product.findById(req.params.id).populate('owner_user_id', 'email name');
     if (!product) return sendError(next, 'NOT_FOUND', 'Product not found', 404);
 
     const stats = await ProductStats.findOne({ product_id: product._id });

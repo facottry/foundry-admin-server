@@ -21,6 +21,8 @@ app.use('/api/admin/kpis', require('./routes/kpis')); // KPI endpoints
 app.use('/api/admin/messages', require('./routes/messages')); // Contact messages
 app.use('/api/admin/products', require('./routes/products')); // Product management
 app.use('/api/admin/users', require('./routes/users')); // User management
+
+app.use('/api/admin/config', require('./routes/config')); // System Config
 app.use('/api/products', require('./routes/products'));
 
 // Global Error Handler

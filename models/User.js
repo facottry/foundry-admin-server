@@ -9,6 +9,8 @@ const UserSchema = new mongoose.Schema({
     otp_hash: { type: String },
     otp_expires: { type: Date },
     created_at: { type: Date, default: Date.now },
+    profileImageKey: { type: String }, // New field for R2 key
+    avatar_url: { type: String }, // Add avatar_url for consistency
 });
 
 module.exports = mongoose.model('User', UserSchema);

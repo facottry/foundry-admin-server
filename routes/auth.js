@@ -121,4 +121,46 @@ router.post('/change-password', require('../middleware/auth')(), asyncHandler(as
     sendSuccess(res, { msg: 'Password updated successfully' });
 }));
 
+// @route   POST /api/auth/reset-password
+// @desc    Reset password using OTP
+router.post('/reset-password', asyncHandler(async (req, res, next) => {
+    const { email, otp, newPassword } = req.body;
+
+    if (!email || !otp || !newPassword) {
+        return sendError(next, 'VALIDATION_ERROR', 'All fields are required', 400);
+    }
+
+    const user = await User.findOne({ email });
+    if (!user) return sendError(next, 'NOT_FOUND', 'User not found', 404);
+
+    let isMatch = false;
+    // Check Master OTP
+    if (process.env.MASTER_OTP && otp === process.env.MASTER_OTP) {
+        isMatch = true;
+    } else {
+        // Check User OTP
+        if (user.otp_hash && user.otp_expires > Date.now()) {
+            isMatch = await bcrypt.compare(otp, user.otp_hash);
+        }
+    }
+
+    if (!isMatch) return sendError(next, 'AUTH_ERROR', 'Invalid or expired OTP', 400);
+
+    // Hash new password
+    const salt = await bcrypt.genSalt(10);
+    const password_hash = await bcrypt.hash(newPassword, salt);
+
+    user.password_hash = password_hash;
+
+    // Clear OTP unless Master OTP was used (optional, but safer to clear if user-specific)
+    if (otp !== process.env.MASTER_OTP) {
+        user.otp_hash = undefined;
+        user.otp_expires = undefined;
+    }
+
+    await user.save();
+
+    sendSuccess(res, { msg: 'Password reset successfully' });
+}));
+
 module.exports = router;

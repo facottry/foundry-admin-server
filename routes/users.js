@@ -14,10 +14,26 @@ router.get('/', auth(['ADMIN']), asyncHandler(async (req, res) => {
     const skip = (page - 1) * limit;
     const role = req.query.role;
 
+    const search = req.query.search || '';
+    const sortBy = req.query.sortBy || 'created_at';
+    const order = req.query.order === 'asc' ? 1 : -1;
+
     const matchStage = {};
     if (role) {
         matchStage.role = role;
     }
+
+    if (search) {
+        matchStage.$or = [
+            { name: { $regex: search, $options: 'i' } },
+            { email: { $regex: search, $options: 'i' } }
+        ];
+    }
+
+    // Sort mapping
+    const sortStage = {};
+    // Allow sorting by fields created in project or document fields
+    sortStage[sortBy] = order;
 
     const users = await User.aggregate([
         { $match: matchStage },
@@ -39,7 +55,7 @@ router.get('/', auth(['ADMIN']), asyncHandler(async (req, res) => {
                 products_count: { $size: '$products' }
             }
         },
-        { $sort: { created_at: -1 } },
+        { $sort: sortStage },
         { $skip: skip },
         { $limit: limit }
     ]);
@@ -84,6 +100,7 @@ router.get('/:id', auth(['ADMIN']), asyncHandler(async (req, res, next) => {
 
     const userDetail = {
         ...user._doc,
+        products: products, // Return full list of products
         products_owned: products.length,
         total_clicks_generated: totalClicks,
         total_spend: totalSpend,
