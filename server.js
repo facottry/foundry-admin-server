@@ -28,6 +28,19 @@ app.use('/api/products', require('./routes/products'));
 // Global Error Handler
 app.use(require('./middleware/errorHandler'));
 
+app.use('/api/admin/newsletters', require('./routes/newsletter'));
+app.use('/api/admin/uploads', require('./routes/uploads'));
+
+// Serve Uploads
+const path = require('path');
+app.use('/uploads', express.static(path.join(__dirname, 'public/uploads')));
+
+// Start AI Cron
+// const { startAiCron } = require('./cron/aiNewsletter');
+// startAiCron();
+const { initAiScheduler } = require('./cron/AiScheduler');
+initAiScheduler();
+
 // Connect to MongoDB
 mongoose.connect(db)
     .then(() => {
