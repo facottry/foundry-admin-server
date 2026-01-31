@@ -11,6 +11,7 @@ const UserSchema = new mongoose.Schema({
     created_at: { type: Date, default: Date.now },
     profileImageKey: { type: String }, // New field for R2 key
     avatar_url: { type: String }, // Add avatar_url for consistency
+    verified: { type: Boolean, default: false }
 });
 
 module.exports = mongoose.model('User', UserSchema);
