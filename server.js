@@ -23,6 +23,7 @@ app.use('/api/admin/products', require('./routes/products')); // Product managem
 app.use('/api/admin/users', require('./routes/users')); // User management
 
 app.use('/api/admin/config', require('./routes/config')); // System Config
+app.use('/api/admin/personalities', require('./routes/personalities')); // Bot Personalities
 app.use('/api/products', require('./routes/products'));
 
 // Global Error Handler
