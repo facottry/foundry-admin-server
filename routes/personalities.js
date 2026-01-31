@@ -34,10 +34,54 @@ router.get('/active', async (req, res) => {
     }
 });
 
+// GET personality by mode (public - for botserver)
+// Customer sees only "mini" or "full" mode - never the persona name
+router.get('/mode/:mode', async (req, res) => {
+    try {
+        const { mode } = req.params;
+
+        if (!['mini', 'full'].includes(mode)) {
+            return res.status(400).json({ error: 'Invalid mode. Must be mini or full' });
+        }
+
+        // Find personality assigned to this mode
+        let personality = await Personality.findOne({ defaultMode: mode });
+
+        // Fallback to active personality if no mode-specific one found
+        if (!personality) {
+            personality = await Personality.findOne({ isActive: true });
+        }
+
+        // Fallback to hardcoded defaults
+        if (!personality) {
+            if (mode === 'mini') {
+                return res.json({
+                    tone: 'You are AIRA - Archive & Intelligence Record Assistant. Role: Records, Memory, Truth. Be factual and neutral.',
+                    greeting: 'AIRA active. What record do you need?'
+                });
+            } else {
+                return res.json({
+                    tone: 'You are REX - Reality & Execution Assistant. Role: Decisions, Actions. Be direct and practical.',
+                    greeting: 'REX ready. What decision needs clarity?'
+                });
+            }
+        }
+
+        // Return only what botserver needs - NO persona name exposed to customer
+        res.json({
+            tone: personality.tone,
+            greeting: personality.greeting
+        });
+    } catch (error) {
+        console.error('Get Personality by Mode Error:', error);
+        res.status(500).json({ error: 'Failed to fetch personality for mode' });
+    }
+});
+
 // CREATE personality
 router.post('/', auth(['ADMIN']), async (req, res) => {
     try {
-        const { name, tone, greeting, isActive } = req.body;
+        const { name, tone, greeting, isActive, defaultMode } = req.body;
 
         if (!name || !tone || !greeting) {
             return res.status(400).json({ error: 'Name, tone, and greeting are required' });
@@ -47,7 +91,8 @@ router.post('/', auth(['ADMIN']), async (req, res) => {
             name,
             tone,
             greeting,
-            isActive: isActive || false
+            isActive: isActive || false,
+            defaultMode: defaultMode || null
         });
 
         await personality.save();
@@ -64,11 +109,11 @@ router.post('/', auth(['ADMIN']), async (req, res) => {
 // UPDATE personality
 router.put('/:id', auth(['ADMIN']), async (req, res) => {
     try {
-        const { name, tone, greeting } = req.body;
+        const { name, tone, greeting, defaultMode } = req.body;
 
         const personality = await Personality.findByIdAndUpdate(
             req.params.id,
-            { name, tone, greeting, updated_at: new Date() },
+            { name, tone, greeting, defaultMode, updated_at: new Date() },
             { new: true, runValidators: true }
         );
 

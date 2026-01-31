@@ -21,6 +21,11 @@ const PersonalitySchema = new mongoose.Schema({
         type: Boolean,
         default: false
     },
+    defaultMode: {
+        type: String,
+        enum: ['mini', 'full', null],
+        default: null
+    },
     created_at: {
         type: Date,
         default: Date.now
