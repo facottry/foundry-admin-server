@@ -81,7 +81,7 @@ router.get('/mode/:mode', async (req, res) => {
 // CREATE personality
 router.post('/', auth(['ADMIN']), async (req, res) => {
     try {
-        const { name, tone, greeting, isActive, defaultMode } = req.body;
+        const { name, tone, greeting, isActive, defaultMode, type } = req.body;
 
         if (!name || !tone || !greeting) {
             return res.status(400).json({ error: 'Name, tone, and greeting are required' });
@@ -92,7 +92,8 @@ router.post('/', auth(['ADMIN']), async (req, res) => {
             tone,
             greeting,
             isActive: isActive || false,
-            defaultMode: defaultMode || null
+            defaultMode: defaultMode || null,
+            type: type || 'REX'
         });
 
         await personality.save();
@@ -109,11 +110,11 @@ router.post('/', auth(['ADMIN']), async (req, res) => {
 // UPDATE personality
 router.put('/:id', auth(['ADMIN']), async (req, res) => {
     try {
-        const { name, tone, greeting, defaultMode } = req.body;
+        const { name, tone, greeting, defaultMode, type } = req.body;
 
         const personality = await Personality.findByIdAndUpdate(
             req.params.id,
-            { name, tone, greeting, defaultMode, updated_at: new Date() },
+            { name, tone, greeting, defaultMode, type, updated_at: new Date() },
             { new: true, runValidators: true }
         );
 
@@ -144,6 +145,12 @@ router.delete('/:id', auth(['ADMIN']), async (req, res) => {
             return res.status(400).json({ error: 'Cannot delete active personality. Activate another one first.' });
         }
 
+        // Restriction: Admin Can Not Delete the Last Persona (of that type)
+        const count = await Personality.countDocuments({ type: personality.type });
+        if (count <= 1) {
+            return res.status(400).json({ error: `Cannot delete the last ${personality.type} personality.` });
+        }
+
         await Personality.findByIdAndDelete(req.params.id);
         res.json({ message: 'Personality deleted successfully' });
     } catch (error) {
@@ -155,19 +162,21 @@ router.delete('/:id', auth(['ADMIN']), async (req, res) => {
 // ACTIVATE personality
 router.put('/:id/activate', auth(['ADMIN']), async (req, res) => {
     try {
-        // Deactivate all others first
-        await Personality.updateMany({}, { isActive: false });
-
-        // Activate the selected one
-        const personality = await Personality.findByIdAndUpdate(
-            req.params.id,
-            { isActive: true, updated_at: new Date() },
-            { new: true }
-        );
-
+        const personality = await Personality.findById(req.params.id);
         if (!personality) {
             return res.status(404).json({ error: 'Personality not found' });
         }
+
+        // Deactivate all others of SAME TYPE
+        await Personality.updateMany({ type: personality.type }, { isActive: false });
+
+        // Activate the selected one
+        personality.isActive = true;
+        personality.updated_at = new Date();
+        // Using save() triggers the pre-save hook which runs the check again (redundant but safe)
+        // Or use findByIdAndUpdate to skip hook if we are sure.
+        // Let's use save() to ensure consistency with our model logic.
+        await personality.save();
 
         res.json({ message: `${personality.name} is now active`, personality });
     } catch (error) {

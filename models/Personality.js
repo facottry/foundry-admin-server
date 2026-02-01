@@ -21,6 +21,12 @@ const PersonalitySchema = new mongoose.Schema({
         type: Boolean,
         default: false
     },
+    type: {
+        type: String,
+        enum: ['REX', 'AIRA'],
+        required: true,
+        default: 'REX'
+    },
     defaultMode: {
         type: String,
         enum: ['mini', 'full', null],
@@ -36,11 +42,14 @@ const PersonalitySchema = new mongoose.Schema({
     }
 });
 
-// Ensure only one active personality at a time
+// Ensure only one active personality PER TYPE
 PersonalitySchema.pre('save', async function (next) {
     if (this.isActive) {
         await this.constructor.updateMany(
-            { _id: { $ne: this._id } },
+            {
+                _id: { $ne: this._id },
+                type: this.type  // Only deactivate same type
+            },
             { isActive: false }
         );
     }
