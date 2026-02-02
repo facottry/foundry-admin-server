@@ -24,6 +24,7 @@ app.use('/api/admin/users', require('./routes/users')); // User management
 
 app.use('/api/admin/config', require('./routes/config')); // System Config
 app.use('/api/admin/personalities', require('./routes/personalities')); // Bot Personalities
+app.use('/api/admin/checklist', require('./routes/checklist')); // Checklist Manager
 app.use('/api/products', require('./routes/products'));
 
 // Global Error Handler
@@ -35,6 +36,7 @@ app.use('/api/admin/uploads', require('./routes/uploads'));
 // Serve Uploads
 const path = require('path');
 app.use('/uploads', express.static(path.join(__dirname, 'public/uploads')));
+app.use(express.static(path.join(__dirname, 'public'))); // Serve checklist.html and other static files
 
 // Start AI Cron
 // const { startAiCron } = require('./cron/aiNewsletter');
