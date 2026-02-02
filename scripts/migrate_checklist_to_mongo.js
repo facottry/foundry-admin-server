@@ -11,8 +11,11 @@ async function migrateChecklistToMongoDB() {
         await mongoose.connect(process.env.MONGO_URI);
         console.log('✅ Connected to MongoDB');
 
-        // Read checklist.json (go up from adminserver/scripts to root, then to tools/checklist_v1)
-        const checklistPath = path.join(__dirname, '../../../tools/checklist_v1/checklist.json');
+        // Read checklist.json from env or default path
+        const defaultPath = path.join(__dirname, '../../../tools/checklist_v1/checklist.json');
+        const checklistPath = process.env.CHECKLIST_JSON_PATH || defaultPath;
+
+        console.log(`📂 Reading checklist from: ${checklistPath}`);
         const checklistData = JSON.parse(fs.readFileSync(checklistPath, 'utf8'));
 
         let insertedCount = 0;
