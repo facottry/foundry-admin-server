@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 5001;
 // Middleware
 app.use(express.json());
 app.use(cors());
+app.use(require('./middleware/serverHealthMonitor'));
 
 // DB Config
 const db = process.env.MONGO_URI || 'mongodb://localhost:27017/foundry';
@@ -32,6 +33,10 @@ app.use(require('./middleware/errorHandler'));
 
 app.use('/api/admin/newsletters', require('./routes/newsletter'));
 app.use('/api/admin/uploads', require('./routes/uploads'));
+app.get('/api/wakeup', (req, res) => res.send('Wakeup call received'));
+app.use('/api/admin/server-health', require('./routes/serverHealth'));
+
+
 
 // Serve Uploads
 const path = require('path');
