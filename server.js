@@ -3,12 +3,21 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 require('dotenv').config();
 
+const { version } = require('./package.json');
+
 const app = express();
 const PORT = process.env.PORT || 5001;
 
 // Middleware
 app.use(express.json());
 app.use(cors());
+
+// Add API_VERSION header to all responses
+app.use((req, res, next) => {
+    res.setHeader('X-API-VERSION', version);
+    next();
+});
+
 app.use(require('./middleware/serverHealthMonitor'));
 
 // DB Config
