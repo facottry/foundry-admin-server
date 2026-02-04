@@ -62,6 +62,7 @@ router.get('/', auth(['ADMIN']), asyncHandler(async (req, res) => {
         {
             $project: {
                 name: 1,
+                slug: 1,
                 tagline: 1,
                 status: 1,
                 traffic_enabled: 1,
@@ -72,6 +73,7 @@ router.get('/', auth(['ADMIN']), asyncHandler(async (req, res) => {
                 'owner._id': 1,   // Keep looked-up ID
                 'owner.email': 1,
                 'owner.name': 1,
+                'owner.slug': 1,
                 clicks_today: { $ifNull: ['$stats.clicks_24h', 0] },
                 clicks_lifetime: { $ifNull: ['$stats.clicks_total', 0] }
             }
