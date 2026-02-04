@@ -199,4 +199,23 @@ router.post('/:id/approve', auth(['ADMIN']), asyncHandler(async (req, res, next)
     sendSuccess(res, { message: 'Product approved successfully', product });
 }));
 
+// @route   POST /api/admin/products/:id/reject
+// @desc    Reject a pending product
+router.post('/:id/reject', auth(['ADMIN']), asyncHandler(async (req, res, next) => {
+    const product = await Product.findById(req.params.id);
+    if (!product) return sendError(next, 'NOT_FOUND', 'Product not found', 404);
+
+    if (product.status === 'rejected') {
+        return sendError(next, 'BAD_REQUEST', 'Product is already rejected', 400);
+    }
+
+    const { reason } = req.body;
+    product.status = 'rejected';
+    product.traffic_enabled = false;
+    product.rejection_reason = reason || 'Did not meet listing guidelines';
+    await product.save();
+
+    sendSuccess(res, { message: 'Product rejected successfully', product });
+}));
+
 module.exports = router;
