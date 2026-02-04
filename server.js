@@ -12,7 +12,7 @@ app.use(cors());
 app.use(require('./middleware/serverHealthMonitor'));
 
 // DB Config
-const db = process.env.MONGO_URI || 'mongodb://localhost:27017/foundry';
+const db = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/foundryfoundry';
 mongoose.set('strictQuery', false);
 
 // Routes
@@ -34,6 +34,7 @@ app.use(require('./middleware/errorHandler'));
 app.use('/api/admin/newsletters', require('./routes/newsletter'));
 app.use('/api/admin/uploads', require('./routes/uploads'));
 app.get('/api/wakeup', (req, res) => res.send('Wakeup call received'));
+app.get('/', (req, res) => res.send('Foundry Admin API Running')); // Health check handler
 app.use('/api/admin/server-health', require('./routes/serverHealth'));
 
 

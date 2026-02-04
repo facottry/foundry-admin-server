@@ -9,6 +9,17 @@ const serverHealthMonitor = async (req, res, next) => {
             const today = new Date().toISOString().split('T')[0];
             const isSuccess = res.statusCode < 400;
 
+            if (!isSuccess) {
+                const fs = require('fs');
+                const path = require('path');
+                const logEntry = `[${new Date().toISOString()}] ${req.method} ${req.originalUrl} - Status: ${res.statusCode}\n`;
+                const logPath = path.join(__dirname, '../logs/failed_requests.log');
+
+                fs.appendFile(logPath, logEntry, (err) => {
+                    if (err) console.error('Failed to write to request log', err);
+                });
+            }
+
             await ServerHealth.findOneAndUpdate(
                 { date: today, server: 'adminserver' },
                 {
