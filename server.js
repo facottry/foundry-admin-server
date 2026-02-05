@@ -53,11 +53,19 @@ const path = require('path');
 app.use('/uploads', express.static(path.join(__dirname, 'public/uploads')));
 app.use(express.static(path.join(__dirname, 'public'))); // Serve checklist.html and other static files
 
-// Start AI Cron
-// const { startAiCron } = require('./cron/aiNewsletter');
-// startAiCron();
-const { initAiScheduler } = require('./cron/AiScheduler');
-initAiScheduler();
+// Start AI Scheduler
+const { initScheduler } = require('./cron/aiScheduler');
+initScheduler();
+
+// Start Image Gen Worker
+const { startWorker } = require('./imagegeneration/worker');
+startWorker();
+
+// Mount Image Gen Routes
+app.use('/api/admin/image', require('./imagegeneration/routes'));
+
+// Mount AI Jobs Routes
+app.use('/api/admin/ai-jobs', require('./routes/aiJob'));
 
 // Connect to MongoDB
 mongoose.connect(db)

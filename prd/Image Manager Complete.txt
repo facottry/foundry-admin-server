@@ -1,0 +1,35 @@
+Image Manager Complete
+
+Final implementation summary:
+
+Backend (adminserver/imagegeneration/):
+
+GET /models - Returns ENV-controlled enabled models
+POST /enhance-prompt - AI-enhanced prompts with text styling rules
+POST /execute-prompt - Queue job with modelKey, size, count
+GET /job-status/:jobId - Single job status
+GET /job-list - List jobs with full details
+DELETE /job/:jobId - Delete jobs
+Models (ENV-controlled):
+
+Key	Label	Cost
+DALLE	DALLE (1X)	1X
+GPTIMAGE	GPTIMAGE (2X)	2X
+GPTIMAGE_HD	GPTIMAGE HD (8X)	8X
+Frontend (
+adminclient/src/pages/ImageManager.jsx
+):
+
+Model dropdown (fetched from API)
+Aspect ratio + image count selectors
+Prompt enhancement with toast feedback
+Job history with date filtering
+Settings badges (model, size, count)
+Scrollable prompt preview
+Delete with confirmation
+Data:
+
+ImageJob schema with modelKey field
+R2 upload with public URLs
+Migration script for existing URLs
+Your manual edit adding text styling rules to the prompt enhancement is noted. Production-ready.

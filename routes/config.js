@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const SystemConfig = require('../models/SystemConfig');
 const auth = require('../middleware/auth');
-const { initAiScheduler } = require('../cron/AiScheduler');
+const { reloadScheduler } = require('../cron/aiScheduler');
 
 // GET Generic Config (All or Specific)
 router.get('/', auth(['ADMIN']), async (req, res) => {
@@ -74,7 +74,7 @@ router.put('/ai', auth(['ADMIN']), async (req, res) => {
         );
 
         // Reload Scheduler
-        await initAiScheduler();
+        await reloadScheduler();
 
         res.json({ message: 'Configuration saved and scheduler reloaded.', config: value });
     } catch (error) {
