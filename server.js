@@ -54,7 +54,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'public/uploads')));
 app.use(express.static(path.join(__dirname, 'public'))); // Serve checklist.html and other static files
 
 // Start AI Scheduler
-const { initScheduler } = require('./cron/aiScheduler');
+const { initScheduler } = require('./cron/AiScheduler');
 initScheduler();
 
 // Start Image Gen Worker

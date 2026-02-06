@@ -1,6 +1,6 @@
 const AIJob = require('../models/AIJob');
 const AIJobRun = require('../models/AIJobRun');
-const { reloadScheduler } = require('../cron/aiScheduler');
+const { reloadScheduler } = require('../cron/AiScheduler');
 const { generateNewsletterContent } = require('../services/aiService');
 const sendEmail = require('../utils/sendEmail');
 
