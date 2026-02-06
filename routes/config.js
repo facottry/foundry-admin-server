@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const SystemConfig = require('../models/SystemConfig');
 const auth = require('../middleware/auth');
-const { reloadScheduler } = require('../cron/aiScheduler');
+const { reloadScheduler } = require('../cron/AiScheduler');
 
 // GET Generic Config (All or Specific)
 router.get('/', auth(['ADMIN']), async (req, res) => {
