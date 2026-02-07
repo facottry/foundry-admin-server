@@ -60,7 +60,8 @@ async function seedAdmins() {
 
     // Connect to MongoDB
     // PRIORITY: Use MONGO_URI to match server.js configuration
-    const db = process.env.MONGO_URI || process.env.MONGO_URI_LOCAL;
+    const db = process.env.MONGO_URI_PROD;
+    // const db = process.env.MONGO_URI_LOCAL;
 
     console.log(`[SEED ADMIN] Connecting to: ${db.split('@')[1] || 'Localhost/Unknown'}`);
 

@@ -38,8 +38,8 @@ async function seedAdmins() {
     console.log('[SEED ADMIN] Starting admin seed process...\n');
 
     // Connect to MongoDB
-    // const db = process.env.MONGO_URI_PROD ;
-    const db = process.env.MONGO_URI_LOCAL;
+    const db = process.env.MONGO_URI_PROD;
+    // const db = process.env.MONGO_URI_LOCAL;
 
 
 
