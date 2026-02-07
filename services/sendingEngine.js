@@ -49,6 +49,7 @@ async function sendNewsletter(newsletterId) {
     let failedCount = 0;
 
     for (let doc = await cursor.next(); doc != null; doc = await cursor.next()) {
+
         // Kill Switch Check
         if (await getKillSwitchStatus()) {
             console.warn('[SendingEngine] KILL_SWITCH active. Aborting.');
@@ -61,7 +62,6 @@ async function sendNewsletter(newsletterId) {
                 console.error(`[SendingEngine] Failed to decrypt email for subscriber ${doc._id}`);
                 continue;
             }
-
             // Send Email
             await sendEmailIndividual(email, newsletter, doc._id);
             sentCount++;

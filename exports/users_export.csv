@@ -1,0 +1,642 @@
+ID,Name,Email,Role,Created At
+6977dedc51bff4449e8b2a88,"Naveen Jaiswal",nvnjwl@gmail.com,ADMIN,2026-01-26T21:38:36.569Z
+6977dfb151bff4449e8b2a91,"Naveen",facottry@gmail.com,ADMIN,2026-01-26T21:42:09.067Z
+6977e24251bff4449e8b2b67,"User Two",nvnjwl2@gmail.com,ADMIN,2026-01-26T21:53:06.574Z
+6978645d371f235936201e59,"naveen",nvnjwl10@gmail.com,FOUNDER,2026-01-27T07:08:13.889Z
+69786481371f235936201e7e,"naveen",nvnjwl11@gmail.com,FOUNDER,2026-01-27T07:08:49.081Z
+697864a5371f235936201e81,"naveen",nvnjwl12@gmail.com,FOUNDER,2026-01-27T07:09:25.384Z
+697864c9371f235936201e84,"naveen",nvnjwl13@gmail.com,FOUNDER,2026-01-27T07:10:01.382Z
+697864f4371f235936201e87,"naveen",nvnjwl14@gmail.com,FOUNDER,2026-01-27T07:10:44.487Z
+69786507371f235936201e8a,"Founder One",founder1@foundry.dev,FOUNDER,2026-01-27T07:11:03.192Z
+69786521371f235936201e91,"naveen",nvnjwl15@gmail.com,FOUNDER,2026-01-27T07:11:29.383Z
+697865d3371f235936201e9d,"Founder Two",founder2@foundry.dev,FOUNDER,2026-01-27T07:14:27.882Z
+697865f6371f235936201ea4,"Founder Three",founder3@foundry.dev,FOUNDER,2026-01-27T07:15:02.582Z
+6978850de359ce6e172bb167,"Nvnjwlgmailcom",nvnjwl3@gmail.com,FOUNDER,2026-01-27T09:27:41.246Z
+697b1115e12e9886f8bc19fd,"Naveen Jaiswal",nvnjwl7@gmail.com,FOUNDER,2026-01-29T07:49:41.745Z
+697e006cb7473c21561b45e8,"SlikeQA",SlikeQA@gmail.com,FOUNDER,2026-01-31T13:15:24.561Z
+697e4e4975c2b9f2eb800a2d,"Vinod Gaur",jn.92192@gmail.com,FOUNDER,2026-01-31T18:47:37.574Z
+697e689deee32397a4f052d9,"slikeqa",slikeqa@gmail.com,FOUNDER,2026-01-31T20:39:57.463Z
+698040efce12edf9ebb3b443,"Shiva Dhavala",support@attentive.ai,FOUNDER,2026-02-01T19:29:46.047Z
+698040f0ce12edf9ebb3b448,"Vibesmonitor",support@vibesmonitor.com,FOUNDER,2026-02-01T19:29:46.087Z
+698040f0ce12edf9ebb3b44c,"thernet",hello@zo.computer,FOUNDER,2026-02-01T19:29:46.093Z
+698040f0ce12edf9ebb3b451,"frank",founder@foundry.com,FOUNDER,2026-02-01T19:29:46.100Z
+698040f0ce12edf9ebb3b456,"Writizzy",founder@writizzy.com,FOUNDER,2026-02-01T19:29:46.107Z
+698040f0ce12edf9ebb3b45b,"Emma Food Scanner",founder@emma-app.com,FOUNDER,2026-02-01T19:29:46.113Z
+698040f0ce12edf9ebb3b460,"GojiberryAI",founder@gojiberry.ai,FOUNDER,2026-02-01T19:29:46.117Z
+698040f0ce12edf9ebb3b464,"Late",founder@late.so,FOUNDER,2026-02-01T19:29:46.122Z
+698040f0ce12edf9ebb3b469,"Dodo Payments",founder@dodopayments.com,FOUNDER,2026-02-01T19:29:46.127Z
+698040f0ce12edf9ebb3b46d,"Philippe Bernard",founder@realfavicongenerator.net,FOUNDER,2026-02-01T19:29:46.131Z
+698040f0ce12edf9ebb3b472,"frank",founder@ai-bundle-2025.com,FOUNDER,2026-02-01T19:39:02.821Z
+698040f0ce12edf9ebb3b477,"ownpage",founder@own.page,FOUNDER,2026-02-01T19:39:02.863Z
+698040f1ce12edf9ebb3b47c,"Skribra",founder@skribra.com,FOUNDER,2026-02-01T19:39:02.871Z
+698040f1ce12edf9ebb3b480,"Vova Feldman",hello@freemius.com,FOUNDER,2026-02-01T19:39:02.876Z
+698040f1ce12edf9ebb3b486,"MemSync",founder@memsync.com,FOUNDER,2026-02-01T19:39:02.880Z
+698040f1ce12edf9ebb3b48c,"Show Up In AI",founder@showupinai.com,FOUNDER,2026-02-01T19:39:02.886Z
+698040f1ce12edf9ebb3b492,"LetterBucket",founder@letterbucket.com,FOUNDER,2026-02-01T19:39:02.891Z
+698040f1ce12edf9ebb3b498,"VidSell",founder@vidsell.com,FOUNDER,2026-02-01T19:39:02.895Z
+698040f1ce12edf9ebb3b49e,"LeyLine",founder@leyline.ai,FOUNDER,2026-02-01T19:39:02.900Z
+698040f1ce12edf9ebb3b4a4,"StoreAgent",founder@storeagent.ai,FOUNDER,2026-02-01T19:39:02.904Z
+698040f1ce12edf9ebb3b4aa,"GuideToDocs",founder@guidetodocs.com,FOUNDER,2026-02-01T19:39:02.909Z
+698040f1ce12edf9ebb3b4b0,"Sevalla",founder@sevalla.com,FOUNDER,2026-02-01T19:39:02.914Z
+698040f1ce12edf9ebb3b4b6,"IndieDevs",founder@indiedevs.com,FOUNDER,2026-02-01T19:39:02.918Z
+698040f1ce12edf9ebb3b4bc,"DevScribe",founder@devscribe.com,FOUNDER,2026-02-01T19:39:02.921Z
+698040f2ce12edf9ebb3b4c2,"JSON Kit",founder@json-kit.com,FOUNDER,2026-02-01T19:39:02.925Z
+698040f2ce12edf9ebb3b4c8,"Autom",founder@autom.com,FOUNDER,2026-02-01T19:39:02.932Z
+698040f2ce12edf9ebb3b4ce,"Is This Course Legit",founder@is-this-course-legit.com,FOUNDER,2026-02-01T19:39:02.937Z
+698040f2ce12edf9ebb3b4d4,"Screen Charm",founder@screencharm.com,FOUNDER,2026-02-01T19:39:02.941Z
+698040f2ce12edf9ebb3b4da,"DeepPrep AI",founder@deepprep.ai,FOUNDER,2026-02-01T19:39:02.945Z
+698040f2ce12edf9ebb3b4e0,"Mumble Note",founder@mumblenote.com,FOUNDER,2026-02-01T19:39:02.950Z
+698040f2ce12edf9ebb3b4e6,"CatDoes",founder@catdoes.com,FOUNDER,2026-02-01T19:39:02.954Z
+698040f2ce12edf9ebb3b4ec,"Fload",founder@fload.ai,FOUNDER,2026-02-01T19:39:02.957Z
+698040f2ce12edf9ebb3b4f2,"Maagnus for Shopify",founder@maagnus-for-shopify.com,FOUNDER,2026-02-01T19:39:02.963Z
+698040f2ce12edf9ebb3b4f8,"DeepTracker",founder@deeptracker.com,FOUNDER,2026-02-01T19:39:02.968Z
+698040f2ce12edf9ebb3b4fe,"reGrowth",founder@regrowth.app,FOUNDER,2026-02-01T19:39:02.973Z
+698040f3ce12edf9ebb3b504,"TechIns",founder@techins8.com,FOUNDER,2026-02-01T19:39:02.978Z
+698040f3ce12edf9ebb3b50a,"Martin Donadieu",founder@capgo.app,FOUNDER,2026-02-01T19:39:02.983Z
+698040f3ce12edf9ebb3b510,"WaitForIt",founder@waitforit.me,FOUNDER,2026-02-01T19:39:17.034Z
+698040f3ce12edf9ebb3b516,"Clawptcha",founder@clawptcha.com,FOUNDER,2026-02-01T19:39:17.043Z
+698040f3ce12edf9ebb3b51c,"PicsGo",founder@picsgo.com,FOUNDER,2026-02-01T19:39:17.048Z
+698040f3ce12edf9ebb3b522,"Gold Calculator",founder@goldcalc.com,FOUNDER,2026-02-01T19:39:17.053Z
+698040f3ce12edf9ebb3b528,"BrowserBook",founder@browserbook.com,FOUNDER,2026-02-01T19:39:17.059Z
+698040f3ce12edf9ebb3b52e,"Beanvest Quality",founder@beanvest.com,FOUNDER,2026-02-01T19:39:17.064Z
+698040f3ce12edf9ebb3b534,"Papr",founder@papr.ai,FOUNDER,2026-02-01T19:39:17.069Z
+698040f3ce12edf9ebb3b53a,"Shelfinder",founder@shelfinder.app,FOUNDER,2026-02-01T19:39:17.074Z
+698040f3ce12edf9ebb3b540,"CirtusAI",founder@cirtus.ai,FOUNDER,2026-02-01T19:39:17.078Z
+698040f3ce12edf9ebb3b546,"Jsfxr Pro",founder@jsfxr-pro.com,FOUNDER,2026-02-01T19:39:17.083Z
+698040f4ce12edf9ebb3b54c,"AdeptDev",founder@adeptdev.com,FOUNDER,2026-02-01T19:39:17.088Z
+698040f4ce12edf9ebb3b552,"Draftly",founder@draftly.com,FOUNDER,2026-02-01T19:39:17.091Z
+698040f4ce12edf9ebb3b558,"Straightyapp",founder@straighty.app,FOUNDER,2026-02-01T19:39:17.098Z
+698040f4ce12edf9ebb3b55e,"TubeGuide",founder@tubeguide.ai,FOUNDER,2026-02-01T19:39:17.101Z
+698040f4ce12edf9ebb3b564,"Property Scout",founder@propertyscout360.com,FOUNDER,2026-02-01T19:41:56.218Z
+698040f4ce12edf9ebb3b56a,"Pestle",founder@pestlechef.app,FOUNDER,2026-02-01T19:41:56.232Z
+698040f4ce12edf9ebb3b570,"Exvero",founder@exvero.com,FOUNDER,2026-02-01T19:41:56.239Z
+698040f4ce12edf9ebb3b576,"Pippit AI",founder@pippit.ai,FOUNDER,2026-02-01T19:41:56.247Z
+698040f4ce12edf9ebb3b57c,"Cognee",founder@cognee.ai,FOUNDER,2026-02-01T19:41:56.253Z
+698040f4ce12edf9ebb3b582,"Autoread",founder@autoread.app,FOUNDER,2026-02-01T19:41:56.258Z
+698040f4ce12edf9ebb3b588,"Zinit",founder@zinit.ai,FOUNDER,2026-02-01T19:41:56.263Z
+698040f4ce12edf9ebb3b58e,"IndexFlow",founder@indexflow.com,FOUNDER,2026-02-01T19:41:56.268Z
+698040f5ce12edf9ebb3b594,"Kive Studios",founder@kive.ai,FOUNDER,2026-02-01T19:41:56.275Z
+698040f5ce12edf9ebb3b59a,"Flowise",founder@flowiseai.com,FOUNDER,2026-02-01T19:41:56.281Z
+698040f5ce12edf9ebb3b5a0,"Opusense",founder@opusense.com,FOUNDER,2026-02-01T19:41:56.286Z
+698040f5ce12edf9ebb3b5a6,"SafeTrigger",founder@safetrigger.io,FOUNDER,2026-02-01T19:41:56.291Z
+698040f5ce12edf9ebb3b5ac,"One Click Deploy",founder@one-click-deploy.com,FOUNDER,2026-02-01T19:41:56.295Z
+698040f5ce12edf9ebb3b5b2,"PRDKit",founder@prdkit.com,FOUNDER,2026-02-01T19:41:56.300Z
+698040f5ce12edf9ebb3b5b8,"LearnerOn",founder@learneron.com,FOUNDER,2026-02-01T19:41:56.305Z
+698040f5ce12edf9ebb3b5be,"Releem",founder@releem.com,FOUNDER,2026-02-01T19:41:56.312Z
+698040f5ce12edf9ebb3b5c4,"GOAT Slider",founder@goatslider.com,FOUNDER,2026-02-01T19:41:56.318Z
+698040f5ce12edf9ebb3b5ca,"Cartesia Sonic",founder@cartesia.ai,FOUNDER,2026-02-01T19:41:56.323Z
+698040f5ce12edf9ebb3b5d0,"Piotr Kulpinski",founder@openalternative.co,FOUNDER,2026-02-01T19:41:56.327Z
+698040f5ce12edf9ebb3b5d6,"Habit Pixel",founder@habitpixel.com,FOUNDER,2026-02-01T19:41:56.331Z
+698040f6ce12edf9ebb3b5dc,"Piotr Kulpinski",founder@devsuite.io,FOUNDER,2026-02-01T19:41:56.336Z
+698040f6ce12edf9ebb3b5e2,"Piotr Kulpinski",founder@euroalternative.eu,FOUNDER,2026-02-01T19:41:56.339Z
+698040f6ce12edf9ebb3b5e8,"Piotr Kulpinski",founder@openads.ai,FOUNDER,2026-02-01T19:41:56.343Z
+698040f6ce12edf9ebb3b5ee,"Howard Shaw",founder@formserve.com,FOUNDER,2026-02-01T19:41:56.346Z
+698040f6ce12edf9ebb3b5f4,"Howard Shaw",founder@docbeacon.com,FOUNDER,2026-02-01T19:41:56.350Z
+698040f6ce12edf9ebb3b5fa,"Chart My Course",founder@chartmycourse.ai,FOUNDER,2026-02-01T19:41:56.354Z
+698040f6ce12edf9ebb3b600,"Rkaching",founder@rkaching.com,FOUNDER,2026-02-01T19:41:56.357Z
+698040f6ce12edf9ebb3b606,"Movestax",founder@movestax.com,FOUNDER,2026-02-01T19:41:56.362Z
+698040f6ce12edf9ebb3b60c,"Myboost",founder@myboost.ai,FOUNDER,2026-02-01T19:41:56.365Z
+698040f6ce12edf9ebb3b612,"Koffio Ai",founder@koffio.ai,FOUNDER,2026-02-01T19:41:56.370Z
+698040f6ce12edf9ebb3b618,"Yazero",founder@yazero.com,FOUNDER,2026-02-01T19:41:56.373Z
+698040f7ce12edf9ebb3b61e,"Kallo",founder@kallo.ai,FOUNDER,2026-02-01T19:41:56.376Z
+698040f7ce12edf9ebb3b624,"Ask Ai For It",founder@askaiforit.com,FOUNDER,2026-02-01T19:41:56.381Z
+698040f7ce12edf9ebb3b62a,"Brandiseer",founder@brandiseer.com,FOUNDER,2026-02-01T19:41:56.386Z
+698040f7ce12edf9ebb3b630,"Adligator",founder@adligator.com,FOUNDER,2026-02-01T19:41:56.392Z
+698040f7ce12edf9ebb3b636,"Startories",founder@startories.com,FOUNDER,2026-02-01T19:41:56.397Z
+698040f7ce12edf9ebb3b63c,"Toolfolio",founder@toolfolio.io,FOUNDER,2026-02-01T19:41:56.403Z
+698040f7ce12edf9ebb3b642,"Detool",founder@detool.com,FOUNDER,2026-02-01T19:41:56.408Z
+698040f7ce12edf9ebb3b648,"Thinkup",founder@thinkup.ai,FOUNDER,2026-02-01T19:41:56.412Z
+698040f7ce12edf9ebb3b64e,"Pickle Rooms",founder@picklerooms.com,FOUNDER,2026-02-01T19:41:56.417Z
+698040f7ce12edf9ebb3b654,"Bootstraw",founder@bootstraw.com,FOUNDER,2026-02-01T19:41:56.423Z
+698040f7ce12edf9ebb3b65a,"Lawforventure",founder@lawforventure.com,FOUNDER,2026-02-01T19:41:56.427Z
+698040f7ce12edf9ebb3b660,"Unicorns Club",founder@unicorns.club,FOUNDER,2026-02-01T19:41:56.431Z
+698040f8ce12edf9ebb3b666,"Connexify",founder@connexify.io,FOUNDER,2026-02-01T19:41:56.435Z
+698040f8ce12edf9ebb3b66c,"Easysite",founder@easysite.com,FOUNDER,2026-02-01T19:41:56.440Z
+698040f8ce12edf9ebb3b672,"Web",founder@web33.io,FOUNDER,2026-02-01T19:41:56.445Z
+698040f8ce12edf9ebb3b678,"Tarotia",founder@tarotia.com,FOUNDER,2026-02-01T19:41:56.450Z
+698040f8ce12edf9ebb3b67e,"Arnaud Belunga",founder@breakcold.com,FOUNDER,2026-02-01T19:41:56.454Z
+698040f8ce12edf9ebb3b684,"Wiseadvizor",founder@wiseadvizor.com,FOUNDER,2026-02-01T19:41:56.458Z
+698040f8ce12edf9ebb3b68a,"Ceedar",founder@ceedar.com,FOUNDER,2026-02-01T19:41:56.462Z
+698040f8ce12edf9ebb3b690,"Allaitool",founder@allaitool.com,FOUNDER,2026-02-01T19:44:13.237Z
+698040f8ce12edf9ebb3b696,"Volta",founder@volta.net,FOUNDER,2026-02-01T19:44:13.251Z
+698040f8ce12edf9ebb3b69c,"Beep",founder@justbeepit.com,FOUNDER,2026-02-01T19:44:13.258Z
+698040f8ce12edf9ebb3b6a2,"Intrascope",founder@intrascope.com,FOUNDER,2026-02-01T19:44:13.264Z
+698040f9ce12edf9ebb3b6a8,"ClearCRM",founder@clearcrm.com,FOUNDER,2026-02-01T19:44:13.270Z
+698040f9ce12edf9ebb3b6ae,"Brisqi",founder@brisqi.com,FOUNDER,2026-02-01T19:44:13.278Z
+698040f9ce12edf9ebb3b6b4,"Clipflow",founder@clipflow.com,FOUNDER,2026-02-01T19:44:13.283Z
+698040f9ce12edf9ebb3b6ba,"Tenki",founder@tenki.ci,FOUNDER,2026-02-01T19:44:13.290Z
+698040f9ce12edf9ebb3b6c0,"BlackTwist",founder@blacktwist.app,FOUNDER,2026-02-01T19:44:13.295Z
+698040f9ce12edf9ebb3b6c6,"TuCanChat",founder@tucanchat.com,FOUNDER,2026-02-01T19:44:13.300Z
+698040f9ce12edf9ebb3b6cc,"Codes Health",founder@codeshealth.com,FOUNDER,2026-02-01T19:44:13.306Z
+698040f9ce12edf9ebb3b6d2,"Rilla",founder@rillavoice.com,FOUNDER,2026-02-01T19:44:13.311Z
+698040f9ce12edf9ebb3b6d8,"Blossom",founder@blossom.health,FOUNDER,2026-02-01T19:44:13.315Z
+698040f9ce12edf9ebb3b6de,"Mantel",founder@mantel.ai,FOUNDER,2026-02-01T19:44:13.319Z
+698040face12edf9ebb3b6e4,"Omnea",founder@omnea.co,FOUNDER,2026-02-01T19:44:13.324Z
+698040face12edf9ebb3b6ea,"Adaptive Security",founder@adaptive-security.com,FOUNDER,2026-02-01T19:44:13.329Z
+698040face12edf9ebb3b6f0,"Harmonic",founder@harmonic.ai,FOUNDER,2026-02-01T19:44:13.333Z
+698040face12edf9ebb3b6f6,"Ambience Healthcare",founder@ambiencehealthcare.com,FOUNDER,2026-02-01T19:44:13.338Z
+698040face12edf9ebb3b6fc,"Tennr",founder@tennr.com,FOUNDER,2026-02-01T19:44:13.341Z
+698040face12edf9ebb3b702,"XBOW",founder@xbow.com,FOUNDER,2026-02-01T19:44:13.345Z
+698040face12edf9ebb3b708,"OpenRouter",founder@openrouter.ai,FOUNDER,2026-02-01T19:44:13.349Z
+698040face12edf9ebb3b70e,"Harvey",founder@harvey.ai,FOUNDER,2026-02-01T19:44:13.352Z
+698040face12edf9ebb3b714,"Tars AI Agents",founder@hellotars.com,FOUNDER,2026-02-01T19:44:13.356Z
+698040face12edf9ebb3b71a,"Opportunexus",founder@opportunexus.com,FOUNDER,2026-02-01T19:46:09.238Z
+698040face12edf9ebb3b720,"Popsy",founder@popsy.co,FOUNDER,2026-02-01T19:46:09.251Z
+698040fbce12edf9ebb3b726,"Typedream",founder@typedream.com,FOUNDER,2026-02-01T19:46:09.257Z
+698040fbce12edf9ebb3b72c,"Adalo",founder@adalo.com,FOUNDER,2026-02-01T19:46:09.262Z
+698040fbce12edf9ebb3b732,"Draftbit",founder@draftbit.com,FOUNDER,2026-02-01T19:46:09.268Z
+698040fbce12edf9ebb3b738,"WeWeb",founder@weweb.io,FOUNDER,2026-02-01T19:46:09.274Z
+698040fbce12edf9ebb3b73e,"Glide",founder@glideapps.com,FOUNDER,2026-02-01T19:46:09.280Z
+698040fbce12edf9ebb3b744,"Typeblock",founder@typeblock.com,FOUNDER,2026-02-01T19:46:09.286Z
+698040fbce12edf9ebb3b74a,"newwebsite",founder@new.website,FOUNDER,2026-02-01T19:46:09.292Z
+698040fbce12edf9ebb3b750,"Mariam Hakobyan",founder@softr.io,FOUNDER,2026-02-01T19:46:09.298Z
+698040fbce12edf9ebb3b756,"Bubble",founder@bubble.io,FOUNDER,2026-02-01T19:46:09.302Z
+698040fcce12edf9ebb3b75c,"Evalyze",founder@evalyze.ai,FOUNDER,2026-02-01T19:46:09.307Z
+698040fcce12edf9ebb3b762,"Caisy",founder@caisy.io,FOUNDER,2026-02-01T19:46:09.310Z
+698040fcce12edf9ebb3b768,"DataWars",founder@datawars.io,FOUNDER,2026-02-01T19:46:09.313Z
+698040fcce12edf9ebb3b76e,"Joyce",founder@investrio.com,FOUNDER,2026-02-01T19:46:09.319Z
+698040fcce12edf9ebb3b774,"Nichole Sterling",founder@mytown.ai,FOUNDER,2026-02-01T19:46:09.324Z
+698040fcce12edf9ebb3b77a,"Girum",founder@doctours.com,FOUNDER,2026-02-01T19:46:09.331Z
+698040fcce12edf9ebb3b780,"Brad",founder@originalsunshine.com,FOUNDER,2026-02-01T19:46:09.336Z
+698040fcce12edf9ebb3b786,"Sarah Lucena",founder@mappa.ai,FOUNDER,2026-02-01T19:46:09.342Z
+698040fcce12edf9ebb3b78c,"Ariel Puga",founder@finnecto.com,FOUNDER,2026-02-01T19:46:09.345Z
+698040fcce12edf9ebb3b792,"Al Lagunas",founder@levee.app,FOUNDER,2026-02-01T19:46:09.349Z
+698040fcce12edf9ebb3b798,"Antonio",founder@awear.io,FOUNDER,2026-02-01T19:46:09.352Z
+698040fcce12edf9ebb3b79e,"Travis Mathis",founder@sveltelaunch.com,FOUNDER,2026-02-01T19:46:09.355Z
+698040fdce12edf9ebb3b7a4,"Nathan Chua",founder@snipowl.com,FOUNDER,2026-02-01T19:46:09.358Z
+698040fdce12edf9ebb3b7aa,"Tim White",founder@wildseo.com,FOUNDER,2026-02-01T19:46:09.363Z
+698040fdce12edf9ebb3b7b0,"Serg Karakhanyan",founder@larafast.com,FOUNDER,2026-02-01T19:46:09.370Z
+698040fdce12edf9ebb3b7b6,"Reddit Team",founder@reddit.com,FOUNDER,2026-02-01T19:46:09.375Z
+698040fdce12edf9ebb3b7bc,"Varnish Software",founder@varnish-software.com,FOUNDER,2026-02-01T19:46:09.382Z
+698040fdce12edf9ebb3b7c2,"Thomas Paul Mann",founder@raycast.com,FOUNDER,2026-02-01T19:46:09.388Z
+698040fdce12edf9ebb3b7c8,"Karri Saarinen",founder@linear.app,FOUNDER,2026-02-01T19:46:09.394Z
+698040fdce12edf9ebb3b7ce,"Cursor",founder@cursor.sh,FOUNDER,2026-02-01T19:46:09.399Z
+698040fdce12edf9ebb3b7d4,"Rahul Vohra",founder@superhuman.com,FOUNDER,2026-02-01T19:46:09.405Z
+698040fece12edf9ebb3b7da,"Raphael Schaad",founder@notion.so,FOUNDER,2026-02-01T19:46:09.408Z
+698040fece12edf9ebb3b7e0,"Josh Miller",founder@arc.net,FOUNDER,2026-02-01T19:46:09.413Z
+698040fece12edf9ebb3b7e6,"Aravind Srinivas",founder@perplexity.ai,FOUNDER,2026-02-01T19:46:09.418Z
+698040fece12edf9ebb3b7ec,"David Holz",founder@midjourney.com,FOUNDER,2026-02-01T19:46:09.423Z
+698040fece12edf9ebb3b7f2,"Victor Riparbelli",founder@synthesia.io,FOUNDER,2026-02-01T19:46:09.428Z
+698040fece12edf9ebb3b7f8,"Cristobal Valenzuela",founder@runwayml.com,FOUNDER,2026-02-01T19:46:09.433Z
+698040fece12edf9ebb3b7fe,"Gamma",founder@gamma.app,FOUNDER,2026-02-01T19:46:09.439Z
+698040fece12edf9ebb3b804,"Keith Peiris",founder@tome.app,FOUNDER,2026-02-01T19:46:09.444Z
+698040fece12edf9ebb3b80a,"Koen Bok",founder@framer.com,FOUNDER,2026-02-01T19:46:09.449Z
+698040fece12edf9ebb3b810,"Tyler Denk",founder@beehiiv.com,FOUNDER,2026-02-01T19:46:09.454Z
+698040fece12edf9ebb3b816,"Chris Best",founder@substack.com,FOUNDER,2026-02-01T19:46:09.460Z
+698040ffce12edf9ebb3b81c,"JR Farr",founder@lemonsqueezy.com,FOUNDER,2026-02-01T19:46:09.466Z
+698040ffce12edf9ebb3b822,"Christian Owens",founder@paddle.com,FOUNDER,2026-02-01T19:46:09.474Z
+698040ffce12edf9ebb3b828,"Sahil Lavingia",founder@gumroad.com,FOUNDER,2026-02-01T19:46:09.480Z
+698040ffce12edf9ebb3b82e,"AJ",founder@carrd.co,FOUNDER,2026-02-01T19:46:09.486Z
+698040ffce12edf9ebb3b834,"Biolink",founder@bio.link,FOUNDER,2026-02-01T19:46:09.493Z
+698040ffce12edf9ebb3b83a,"Alex Zaccaria",founder@linktr.ee,FOUNDER,2026-02-01T19:46:09.499Z
+698040ffce12edf9ebb3b840,"Ryan Hoover",founder@producthunt.com,FOUNDER,2026-02-01T19:46:09.504Z
+698040ffce12edf9ebb3b846,"Pandada AI",admin@pandada.ai,FOUNDER,2026-02-01T19:50:52.481Z
+698040ffce12edf9ebb3b84c,"TravelAnimator",admin@travelanimator.com,FOUNDER,2026-02-01T19:50:52.493Z
+69804100ce12edf9ebb3b852,"MeetTing",admin@meet-ting.com,FOUNDER,2026-02-01T19:50:52.499Z
+69804100ce12edf9ebb3b858,"Meteroid",admin@meteroid.io,FOUNDER,2026-02-01T19:50:52.503Z
+69804100ce12edf9ebb3b85e,"Kilo Code Reviewer",admin@kilo.app,FOUNDER,2026-02-01T19:50:52.507Z
+69804100ce12edf9ebb3b864,"Moltbot",admin@moltbot.com,FOUNDER,2026-02-01T19:50:52.512Z
+69804100ce12edf9ebb3b86a,"LobeHub",admin@lobehub.com,FOUNDER,2026-02-01T19:50:52.516Z
+69804100ce12edf9ebb3b870,"Timeless",admin@timeless.ai,FOUNDER,2026-02-01T19:50:52.519Z
+69804100ce12edf9ebb3b876,"Minara",admin@minara.finance,FOUNDER,2026-02-01T19:50:52.524Z
+69804100ce12edf9ebb3b87c,"Verdent",admin@verdent.dev,FOUNDER,2026-02-01T19:50:52.527Z
+69804100ce12edf9ebb3b882,"Cue",admin@cue.social,FOUNDER,2026-02-01T19:50:52.531Z
+69804100ce12edf9ebb3b888,"JDoodleai",admin@jdoodle.com,FOUNDER,2026-02-01T19:50:52.534Z
+69804100ce12edf9ebb3b88e,"PingPolls",admin@pingpolls.com,FOUNDER,2026-02-01T19:50:52.537Z
+69804100ce12edf9ebb3b894,"Thumbfast",admin@thumbfa.st,FOUNDER,2026-02-01T19:50:52.541Z
+69804101ce12edf9ebb3b89a,"Mochi Focus",admin@mochi.focus,FOUNDER,2026-02-01T19:50:52.546Z
+69804101ce12edf9ebb3b8a0,"Forumsai",admin@forums.ai,FOUNDER,2026-02-01T19:50:52.549Z
+69804101ce12edf9ebb3b8a6,"Pola Browser",admin@polabrowser.com,FOUNDER,2026-02-01T19:50:52.554Z
+69804101ce12edf9ebb3b8ac,"Hyoi",admin@hyoi.app,FOUNDER,2026-02-01T19:50:52.557Z
+69804101ce12edf9ebb3b8b2,"Humans in the Loop",admin@humansintheloop.com,FOUNDER,2026-02-01T19:50:52.559Z
+69804101ce12edf9ebb3b8b8,"BrainLoom",admin@brainloom.ai,FOUNDER,2026-02-01T19:50:52.562Z
+69804101ce12edf9ebb3b8be,"GetThis",admin@getthis.app,FOUNDER,2026-02-01T19:50:52.565Z
+69804101ce12edf9ebb3b8c4,"Blink Agent Builder",admin@blink.new,FOUNDER,2026-02-01T19:50:52.568Z
+69804101ce12edf9ebb3b8ca,"Fimo",admin@fimo.design,FOUNDER,2026-02-01T19:50:52.571Z
+69804101ce12edf9ebb3b8d0,"Mastra",admin@mastra.ai,FOUNDER,2026-02-01T19:50:52.573Z
+69804101ce12edf9ebb3b8d6,"Citable",admin@citable.ai,FOUNDER,2026-02-01T19:50:52.577Z
+69804101ce12edf9ebb3b8dc,"FastMCP",admin@fastmcp.org,FOUNDER,2026-02-01T19:50:52.580Z
+69804102ce12edf9ebb3b8e2,"Nimrod Kramer",admin@daily.dev,FOUNDER,2026-02-01T19:50:52.583Z
+69804102ce12edf9ebb3b8e8,"Interactpitch",admin@interactpitch.com,FOUNDER,2026-02-01T19:50:52.587Z
+69804102ce12edf9ebb3b8ee,"Typeless",admin@typeless.ai,FOUNDER,2026-02-01T19:50:52.589Z
+69804102ce12edf9ebb3b8f4,"Figyai",admin@figy.ai,FOUNDER,2026-02-01T19:50:52.593Z
+69804102ce12edf9ebb3b8fa,"Caricaturelife",admin@caricature.life,FOUNDER,2026-02-01T19:50:52.596Z
+69804102ce12edf9ebb3b900,"Purifai",admin@purifai.com,FOUNDER,2026-02-01T19:50:52.600Z
+69804102ce12edf9ebb3b906,"Movens",admin@movens.app,FOUNDER,2026-02-01T19:50:52.603Z
+69804102ce12edf9ebb3b90c,"Cloudchipr",admin@cloudchipr.com,FOUNDER,2026-02-01T19:50:52.605Z
+69804102ce12edf9ebb3b912,"Dewdrop",admin@dewdrop.app,FOUNDER,2026-02-01T19:50:52.608Z
+69804102ce12edf9ebb3b918,"Chessmaster AI",admin@chessmaster.ai,FOUNDER,2026-02-01T19:50:52.611Z
+69804102ce12edf9ebb3b91e,"StealthHound",admin@stealthhound.com,FOUNDER,2026-02-01T19:50:52.614Z
+69804102ce12edf9ebb3b924,"LinkNotch",admin@linknotch.com,FOUNDER,2026-02-01T19:50:52.617Z
+69804103ce12edf9ebb3b92a,"Simpl",admin@simpl.sh,FOUNDER,2026-02-01T19:50:52.620Z
+69804103ce12edf9ebb3b930,"Undiscord",admin@undiscord.com,FOUNDER,2026-02-01T19:50:52.623Z
+69804103ce12edf9ebb3b936,"xCal",admin@0xcal.com,FOUNDER,2026-02-01T19:50:52.627Z
+69804103ce12edf9ebb3b93c,"Dottie",admin@dottie.app,FOUNDER,2026-02-01T19:50:52.631Z
+69804103ce12edf9ebb3b942,"Time Ledger",admin@timeledger.com,FOUNDER,2026-02-01T19:50:52.633Z
+69804103ce12edf9ebb3b948,"Yomio",admin@yomio.app,FOUNDER,2026-02-01T19:50:52.636Z
+69804103ce12edf9ebb3b94e,"Good Assistant",admin@goodassistant.ai,FOUNDER,2026-02-01T19:50:52.639Z
+69804103ce12edf9ebb3b954,"Hyta",admin@hyta.ai,FOUNDER,2026-02-01T19:50:52.642Z
+69804103ce12edf9ebb3b95a,"Reavion",admin@reavion.com,FOUNDER,2026-02-01T19:50:52.645Z
+69804104ce12edf9ebb3b960,"ClaudeUsageBar",admin@claudeusage.com,FOUNDER,2026-02-01T19:50:52.648Z
+69804104ce12edf9ebb3b966,"Pretty Prompt",admin@prettyprompt.com,FOUNDER,2026-02-01T19:50:52.651Z
+69804104ce12edf9ebb3b96c,"skillssh",admin@skills.sh,FOUNDER,2026-02-01T19:50:52.654Z
+69804104ce12edf9ebb3b972,"Herodot AI",admin@herodot.ai,FOUNDER,2026-02-01T19:50:52.657Z
+69804104ce12edf9ebb3b978,"Flowstep",admin@flowstep.ai,FOUNDER,2026-02-01T19:50:52.661Z
+69804104ce12edf9ebb3b97e,"DestMate",admin@destmate.com,FOUNDER,2026-02-01T19:50:52.664Z
+69804104ce12edf9ebb3b984,"ChartGen AI",admin@chartgen.ai,FOUNDER,2026-02-01T19:50:52.666Z
+69804104ce12edf9ebb3b98a,"Cowork",admin@cowork.ai,FOUNDER,2026-02-01T19:50:52.669Z
+69804104ce12edf9ebb3b990,"PostSyncer",admin@postsyncer.com,FOUNDER,2026-02-01T19:50:52.672Z
+69804104ce12edf9ebb3b996,"DataFast",admin@datafast.io,FOUNDER,2026-02-01T19:50:52.675Z
+69804104ce12edf9ebb3b99c,"Mom Clock",admin@momclock.com,FOUNDER,2026-02-01T19:50:52.678Z
+69804105ce12edf9ebb3b9a2,"Code",admin@1code.dev,FOUNDER,2026-02-01T19:50:52.683Z
+69804105ce12edf9ebb3b9a8,"Red Barn Robotics",admin@redbarnrobotics.com,FOUNDER,2026-02-01T19:50:52.686Z
+69804105ce12edf9ebb3b9ae,"Mentra",admin@mentra.glass,FOUNDER,2026-02-01T19:50:52.689Z
+69804105ce12edf9ebb3b9b4,"Vantel",admin@vantel.ai,FOUNDER,2026-02-01T19:50:52.693Z
+69804105ce12edf9ebb3b9ba,"Fira",admin@firaresearch.com,FOUNDER,2026-02-01T19:50:52.696Z
+69804105ce12edf9ebb3b9c0,"assistantui",admin@assistant-ui.com,FOUNDER,2026-02-01T19:50:52.698Z
+69804105ce12edf9ebb3b9c6,"Axal",admin@axal.ai,FOUNDER,2026-02-01T19:50:52.703Z
+69804105ce12edf9ebb3b9cc,"Dexterity",admin@getdexterity.com,FOUNDER,2026-02-01T19:50:52.706Z
+69804105ce12edf9ebb3b9d2,"TrainLoop",admin@trainloop.ai,FOUNDER,2026-02-01T19:50:52.708Z
+69804106ce12edf9ebb3b9d8,"Cedar",admin@cedar.com,FOUNDER,2026-02-01T19:50:52.711Z
+69804106ce12edf9ebb3b9de,"Browser Use",admin@browser-use.com,FOUNDER,2026-02-01T19:50:52.713Z
+69804106ce12edf9ebb3b9e4,"TamLabs",admin@tamlabs.ai,FOUNDER,2026-02-01T19:50:52.717Z
+69804106ce12edf9ebb3b9ea,"Paratus Health",admin@paratushealth.com,FOUNDER,2026-02-01T19:50:52.720Z
+69804106ce12edf9ebb3b9f0,"Dalus",admin@dalus.io,FOUNDER,2026-02-01T19:50:52.723Z
+69804106ce12edf9ebb3b9f6,"James Zammit",admin@roark.ai,FOUNDER,2026-02-01T19:50:52.725Z
+69804106ce12edf9ebb3b9fc,"Rebolt",admin@rebolt.ai,FOUNDER,2026-02-01T19:50:52.728Z
+69804106ce12edf9ebb3ba02,"Saurav Bubber",admin@fuse.ai,FOUNDER,2026-02-01T19:50:52.731Z
+69804106ce12edf9ebb3ba08,"Miyagi Labs",admin@miyagilabs.ai,FOUNDER,2026-02-01T19:50:52.734Z
+69804106ce12edf9ebb3ba0e,"Artificial Societies",admin@societies.io,FOUNDER,2026-02-01T19:50:52.737Z
+69804106ce12edf9ebb3ba14,"TripleZip",admin@triplezip.ai,FOUNDER,2026-02-01T19:50:52.739Z
+69804106ce12edf9ebb3ba1a,"Peppr",admin@usepeppr.ai,FOUNDER,2026-02-01T19:50:52.742Z
+69804107ce12edf9ebb3ba20,"Tire Swing",admin@tireswingcollective.org,FOUNDER,2026-02-01T19:50:52.746Z
+69804107ce12edf9ebb3ba26,"Harper",admin@harperinsure.com,FOUNDER,2026-02-01T19:50:52.749Z
+69804107ce12edf9ebb3ba2c,"Calltree AI",admin@calltree.ai,FOUNDER,2026-02-01T19:50:52.751Z
+69804107ce12edf9ebb3ba32,"Nitrode",admin@nitrode.com,FOUNDER,2026-02-01T19:50:52.754Z
+69804107ce12edf9ebb3ba38,"Karsa",admin@gokarsa.com,FOUNDER,2026-02-01T19:50:52.757Z
+69804107ce12edf9ebb3ba3e,"Confident AI",admin@confident-ai.com,FOUNDER,2026-02-01T19:50:52.760Z
+69804107ce12edf9ebb3ba44,"Shaun Lane",admin@withriviera.com,FOUNDER,2026-02-01T19:50:52.764Z
+69804107ce12edf9ebb3ba4a,"Waypoint Transit",admin@waypointtransit.com,FOUNDER,2026-02-01T19:50:52.766Z
+69804107ce12edf9ebb3ba50,"RedCheckerio",admin@redchecker.io,FOUNDER,2026-02-01T19:50:52.769Z
+69804108ce12edf9ebb3ba56,"LeadSynthAI",admin@leadsynth.ai,FOUNDER,2026-02-01T19:50:52.772Z
+69804108ce12edf9ebb3ba5c,"ShipAhead",admin@shipahead.com,FOUNDER,2026-02-01T19:50:52.775Z
+69804108ce12edf9ebb3ba62,"PodSnip",admin@podsnip.com,FOUNDER,2026-02-01T19:50:52.779Z
+69804108ce12edf9ebb3ba68,"LeaseLens",admin@leaselens.com,FOUNDER,2026-02-01T19:50:52.781Z
+69804108ce12edf9ebb3ba6e,"NicheNav",admin@nichenav.com,FOUNDER,2026-02-01T19:50:52.784Z
+69804108ce12edf9ebb3ba74,"GreenThread",admin@greenthread.com,FOUNDER,2026-02-01T19:50:52.788Z
+69804108ce12edf9ebb3ba7a,"SwiftGrant",admin@swiftgrant.com,FOUNDER,2026-02-01T19:50:52.790Z
+69804108ce12edf9ebb3ba80,"OnlyFams",admin@onlyfams.io,FOUNDER,2026-02-01T19:50:52.793Z
+69804108ce12edf9ebb3ba86,"MedMemo",admin@medmemo.com,FOUNDER,2026-02-01T19:50:52.796Z
+69804108ce12edf9ebb3ba8c,"StackSalad",admin@stacksalad.com,FOUNDER,2026-02-01T19:50:52.799Z
+69804108ce12edf9ebb3ba92,"EventEssentials",admin@eventessentials.com,FOUNDER,2026-02-01T19:50:52.802Z
+69804109ce12edf9ebb3ba98,"RetireRight",admin@retireright.eu,FOUNDER,2026-02-01T19:50:52.805Z
+69804109ce12edf9ebb3ba9e,"CheckAnalytic",admin@checkanalytic.com,FOUNDER,2026-02-01T19:50:52.808Z
+69804109ce12edf9ebb3baa4,"Filippanoski",admin@bazzly.com,FOUNDER,2026-02-01T19:50:52.812Z
+69804109ce12edf9ebb3baaa,"Mukul Sharma",admin@trustgather.com,FOUNDER,2026-02-01T19:50:52.815Z
+69804109ce12edf9ebb3bab0,"Alexander Mallory",admin@trellomate.com,FOUNDER,2026-02-01T19:50:52.818Z
+69804109ce12edf9ebb3bab6,"FashionHub",admin@fashionhub.com,FOUNDER,2026-02-01T19:50:52.821Z
+69804109ce12edf9ebb3babc,"VertexMedia",admin@cofounderhunt.com,FOUNDER,2026-02-01T19:50:52.824Z
+69804109ce12edf9ebb3bac2,"Yesiman",admin@ekitstudio.com,FOUNDER,2026-02-01T19:50:52.828Z
+69804109ce12edf9ebb3bac8,"Kirk Breton",admin@kirkbench.com,FOUNDER,2026-02-01T19:50:52.831Z
+69804109ce12edf9ebb3bace,"Einar Vollset",admin@indiebank.com,FOUNDER,2026-02-01T19:50:52.835Z
+69804109ce12edf9ebb3bad4,"LaunchFast",admin@launchfast.com,FOUNDER,2026-02-01T19:50:52.837Z
+69804109ce12edf9ebb3bada,"OpenSaaS",admin@opensaas.sh,FOUNDER,2026-02-01T19:50:52.840Z
+6980410ace12edf9ebb3bae0,"Divjoy",admin@divjoy.com,FOUNDER,2026-02-01T19:50:52.843Z
+6980410ace12edf9ebb3bae6,"Neon",admin@neon.tech,FOUNDER,2026-02-01T19:50:52.846Z
+6980410ace12edf9ebb3baec,"Railway",admin@railway.app,FOUNDER,2026-02-01T19:50:52.850Z
+6980410ace12edf9ebb3baf2,"Upstash",admin@upstash.com,FOUNDER,2026-02-01T19:50:52.853Z
+6980410ace12edf9ebb3baf8,"Authjs",admin@authjs.dev,FOUNDER,2026-02-01T19:50:52.857Z
+6980410ace12edf9ebb3bafe,"Resend",admin@resend.com,FOUNDER,2026-02-01T19:50:52.860Z
+6980410ace12edf9ebb3bb04,"Loops",admin@loops.so,FOUNDER,2026-02-01T19:50:52.863Z
+6980410ace12edf9ebb3bb0a,"Pirsch",admin@pirsch.io,FOUNDER,2026-02-01T19:50:52.866Z
+6980410ace12edf9ebb3bb10,"Featurebase",admin@featurebase.app,FOUNDER,2026-02-01T19:50:52.870Z
+6980410ace12edf9ebb3bb16,"Sleekplan",admin@sleekplan.com,FOUNDER,2026-02-01T19:50:52.873Z
+6980410ace12edf9ebb3bb1c,"Tally",admin@tally.so,FOUNDER,2026-02-01T19:50:52.877Z
+6980410ace12edf9ebb3bb22,"Chatwoot",admin@chatwoot.com,FOUNDER,2026-02-01T19:50:52.879Z
+6980410bce12edf9ebb3bb28,"Screen Studio",admin@screen.studio,FOUNDER,2026-02-01T19:50:52.882Z
+6980410bce12edf9ebb3bb2e,"Kap",admin@getkap.co,FOUNDER,2026-02-01T19:50:52.885Z
+6980410bce12edf9ebb3bb34,"Listen Labs",admin@listenlabs.ai,FOUNDER,2026-02-01T19:50:52.888Z
+6980410bce12edf9ebb3bb3a,"Avoca",admin@avoca.ai,FOUNDER,2026-02-01T19:50:52.891Z
+6980410bce12edf9ebb3bb40,"Traba",admin@traba.work,FOUNDER,2026-02-01T19:50:52.894Z
+6980410bce12edf9ebb3bb46,"Pogo",admin@joinpogo.com,FOUNDER,2026-02-01T19:50:52.896Z
+6980410bce12edf9ebb3bb4c,"Sonner",admin@sonner.dev,FOUNDER,2026-02-01T19:50:52.899Z
+6980410bce12edf9ebb3bb52,"Lucia",admin@lucia-auth.com,FOUNDER,2026-02-01T19:50:52.902Z
+6980410bce12edf9ebb3bb58,"Coolify",admin@coolify.io,FOUNDER,2026-02-01T19:50:52.905Z
+6980410bce12edf9ebb3bb5e,"LaunchVault",admin@launchvault.com,FOUNDER,2026-02-01T19:50:52.908Z
+6980410bce12edf9ebb3bb64,"Scofield",admin@coastfirecalc.org,FOUNDER,2026-02-01T19:50:52.911Z
+6980410cce12edf9ebb3bb6a,"Scofield",admin@justsimple.tools,FOUNDER,2026-02-01T19:50:52.914Z
+6980410cce12edf9ebb3bb70,"CapCut Desktop",admin@capcut.com,FOUNDER,2026-02-01T19:50:52.917Z
+6980410cce12edf9ebb3bb76,"InVideo",admin@invideo.io,FOUNDER,2026-02-01T19:50:52.920Z
+6980410cce12edf9ebb3bb7c,"Mureka",admin@mureka.ai,FOUNDER,2026-02-01T19:50:52.924Z
+6980410cce12edf9ebb3bb82,"Surfer SEO",admin@surferseo.com,FOUNDER,2026-02-01T19:50:52.927Z
+6980410cce12edf9ebb3bb88,"Nathan Barry",admin@convertkit.com,FOUNDER,2026-02-01T19:50:52.930Z
+6980410cce12edf9ebb3bb8e,"ZeroGPT",admin@zerogpt.com,FOUNDER,2026-02-01T19:50:52.933Z
+6980410cce12edf9ebb3bb94,"Sudowrite",admin@sudowrite.com,FOUNDER,2026-02-01T19:50:52.936Z
+6980410cce12edf9ebb3bb9a,"AIVA",admin@aiva.ai,FOUNDER,2026-02-01T19:50:52.939Z
+6980410cce12edf9ebb3bba0,"Suno",admin@suno.ai,FOUNDER,2026-02-01T19:50:52.942Z
+6980410cce12edf9ebb3bba6,"Glean",admin@glean.com,FOUNDER,2026-02-01T19:50:52.946Z
+6980410cce12edf9ebb3bbac,"Relay",admin@relay.app,FOUNDER,2026-02-01T19:50:52.950Z
+6980410dce12edf9ebb3bbb2,"Bardeen AI",admin@bardeen.ai,FOUNDER,2026-02-01T19:50:52.953Z
+6980410dce12edf9ebb3bbb8,"EmbedSocial",admin@embedsocial.com,FOUNDER,2026-02-01T19:50:52.956Z
+6980410dce12edf9ebb3bbbe,"BrightLocal",admin@brightlocal.com,FOUNDER,2026-02-01T19:50:52.959Z
+6980410dce12edf9ebb3bbc4,"Wave Financial",admin@waveapps.com,FOUNDER,2026-02-01T19:50:52.962Z
+6980410dce12edf9ebb3bbca,"FreshBooks",admin@freshbooks.com,FOUNDER,2026-02-01T19:50:52.965Z
+6980410dce12edf9ebb3bbd0,"QuickBooks",admin@quickbooks.intuit.com,FOUNDER,2026-02-01T19:50:52.969Z
+6980410dce12edf9ebb3bbd6,"Otterai",admin@otter.ai,FOUNDER,2026-02-01T19:50:52.972Z
+6980410dce12edf9ebb3bbdc,"Firefliesai",admin@fireflies.ai,FOUNDER,2026-02-01T19:50:52.975Z
+6980410dce12edf9ebb3bbe2,"Fathom",admin@fathom.video,FOUNDER,2026-02-01T19:50:52.977Z
+6980410dce12edf9ebb3bbe8,"Cyclr",admin@cyclr.com,FOUNDER,2026-02-01T19:50:52.980Z
+6980410dce12edf9ebb3bbee,"Salesforce Agentforce",admin@salesforce.com,FOUNDER,2026-02-01T19:50:52.982Z
+6980410dce12edf9ebb3bbf4,"HubSpot AI",admin@hubspot.com,FOUNDER,2026-02-01T19:50:52.985Z
+6980410ece12edf9ebb3bbfa,"Microsoft Copilot",admin@microsoft.com,FOUNDER,2026-02-01T19:50:52.988Z
+6980410ece12edf9ebb3bc00,"Notion AI",admin@notion.so,FOUNDER,2026-02-01T19:50:52.990Z
+6980410ece12edf9ebb3bc06,"Zapier Central",admin@zapier.com,FOUNDER,2026-02-01T19:50:52.993Z
+6980410ece12edf9ebb3bc0c,"Make Integromat",admin@make.com,FOUNDER,2026-02-01T19:50:52.995Z
+6980410ece12edf9ebb3bc12,"Supabase",admin@supabase.com,FOUNDER,2026-02-01T19:50:52.998Z
+6980410ece12edf9ebb3bc18,"Clerk",admin@clerk.com,FOUNDER,2026-02-01T19:50:53.001Z
+6980410ece12edf9ebb3bc1e,"Lemon Squeezy",admin@lemonsqueezy.com,FOUNDER,2026-02-01T19:50:53.004Z
+6980410ece12edf9ebb3bc24,"Paddle",admin@paddle.com,FOUNDER,2026-02-01T19:50:53.012Z
+6980410ece12edf9ebb3bc2a,"Auth",admin@auth0.com,FOUNDER,2026-02-01T19:50:53.016Z
+6980410ece12edf9ebb3bc30,"Prisma",admin@prisma.io,FOUNDER,2026-02-01T19:50:53.018Z
+6980410ece12edf9ebb3bc36,"Vercel",admin@vercel.com,FOUNDER,2026-02-01T19:50:53.022Z
+6980410fce12edf9ebb3bc3c,"Netlify",admin@netlify.com,FOUNDER,2026-02-01T19:50:53.024Z
+6980410fce12edf9ebb3bc42,"Render",admin@render.com,FOUNDER,2026-02-01T19:50:53.027Z
+6980410fce12edf9ebb3bc48,"Flyio",admin@fly.io,FOUNDER,2026-02-01T19:50:53.030Z
+6980410fce12edf9ebb3bc4e,"Hypefury",admin@hypefury.com,FOUNDER,2026-02-01T19:50:53.033Z
+6980410fce12edf9ebb3bc54,"Black Magic",admin@blackmagic.so,FOUNDER,2026-02-01T19:50:53.035Z
+6980410fce12edf9ebb3bc5a,"Shield",admin@shieldapp.ai,FOUNDER,2026-02-01T19:50:53.038Z
+6980410fce12edf9ebb3bc60,"Unicorn Platform",admin@unicornplatform.com,FOUNDER,2026-02-01T19:50:53.042Z
+6980410fce12edf9ebb3bc66,"PostHog",admin@posthog.com,FOUNDER,2026-02-01T19:50:53.045Z
+6980410fce12edf9ebb3bc6c,"LogRocket",admin@logrocket.com,FOUNDER,2026-02-01T19:50:53.049Z
+6980410fce12edf9ebb3bc72,"Intercom",admin@intercom.com,FOUNDER,2026-02-01T19:50:53.052Z
+6980410fce12edf9ebb3bc78,"Help Scout",admin@helpscout.com,FOUNDER,2026-02-01T19:50:53.056Z
+6980410fce12edf9ebb3bc7e,"Buttondown",admin@buttondown.email,FOUNDER,2026-02-01T19:50:53.059Z
+69804110ce12edf9ebb3bc84,"Mailchimp",admin@mailchimp.com,FOUNDER,2026-02-01T19:50:53.063Z
+69804110ce12edf9ebb3bc8a,"Neil Patel",admin@neilpatel.com,FOUNDER,2026-02-01T19:50:53.066Z
+69804110ce12edf9ebb3bc90,"AnswerThePublic",admin@answerthepublic.com,FOUNDER,2026-02-01T19:50:53.068Z
+69804110ce12edf9ebb3bc96,"Clearscope",admin@clearscope.io,FOUNDER,2026-02-01T19:50:53.071Z
+69804110ce12edf9ebb3bc9c,"Google Search Console",admin@google.com,FOUNDER,2026-02-01T19:50:53.073Z
+69804110ce12edf9ebb3bca2,"Buffer",admin@buffer.com,FOUNDER,2026-02-01T19:50:53.077Z
+69804110ce12edf9ebb3bca8,"Ivan Kutskir",admin@photopea.com,FOUNDER,2026-02-01T19:50:53.080Z
+69804110ce12edf9ebb3bcae,"Spline",admin@spline.design,FOUNDER,2026-02-01T19:50:53.083Z
+69804110ce12edf9ebb3bcb4,"Rive",admin@rive.app,FOUNDER,2026-02-01T19:50:53.086Z
+69804110ce12edf9ebb3bcba,"DaisyUI",admin@daisyui.com,FOUNDER,2026-02-01T19:50:53.089Z
+69804110ce12edf9ebb3bcc0,"Lucide",admin@lucide.dev,FOUNDER,2026-02-01T19:50:53.092Z
+69804110ce12edf9ebb3bcc6,"Heroicons",admin@heroicons.com,FOUNDER,2026-02-01T19:50:53.094Z
+69804111ce12edf9ebb3bccc,"unDraw",admin@undraw.co,FOUNDER,2026-02-01T19:50:53.098Z
+69804111ce12edf9ebb3bcd2,"Storyset",admin@storyset.com,FOUNDER,2026-02-01T19:50:53.101Z
+69804111ce12edf9ebb3bcd8,"Removebg",admin@remove.bg,FOUNDER,2026-02-01T19:50:53.106Z
+69804111ce12edf9ebb3bcde,"TinyPNG",admin@tinypng.com,FOUNDER,2026-02-01T19:50:53.109Z
+69804111ce12edf9ebb3bce4,"Loom",admin@loom.com,FOUNDER,2026-02-01T19:50:53.113Z
+69804111ce12edf9ebb3bcea,"OBS Studio",admin@obsproject.com,FOUNDER,2026-02-01T19:50:53.116Z
+69804111ce12edf9ebb3bcf0,"Eraser",admin@eraser.io,FOUNDER,2026-02-01T19:50:53.120Z
+69804111ce12edf9ebb3bcf6,"Zoltan",founder@feedback-pulse.com,FOUNDER,2026-02-01T19:53:27.674Z
+69804111ce12edf9ebb3bcfc,"Wujieli",founder@anytourl.com,FOUNDER,2026-02-01T19:53:27.689Z
+69804111ce12edf9ebb3bd02,"Dreamervisionai",founder@dreamervisionai.com,FOUNDER,2026-02-01T19:53:27.694Z
+69804111ce12edf9ebb3bd08,"Isidora",founder@launch-saas.com,FOUNDER,2026-02-01T19:53:27.699Z
+69804111ce12edf9ebb3bd0e,"Prafull",founder@spool.com,FOUNDER,2026-02-01T19:53:27.705Z
+69804112ce12edf9ebb3bd14,"Tarun Mittal",founder@chromaflow.com,FOUNDER,2026-02-01T19:53:27.711Z
+69804112ce12edf9ebb3bd1a,"Michele Lacorte",founder@meddle.com,FOUNDER,2026-02-01T19:53:27.715Z
+69804112ce12edf9ebb3bd20,"HipDeck",founder@hipdeck.com,FOUNDER,2026-02-01T19:53:27.719Z
+69804112ce12edf9ebb3bd26,"Rouven",founder@mensorai.com,FOUNDER,2026-02-01T19:53:27.725Z
+69804112ce12edf9ebb3bd2c,"Philipp",founder@coinbird.com,FOUNDER,2026-02-01T19:53:27.729Z
+69804112ce12edf9ebb3bd32,"Alex",founder@appstoreready.com,FOUNDER,2026-02-01T19:53:27.734Z
+69804112ce12edf9ebb3bd38,"Ray C",founder@ai-essay-writer.com,FOUNDER,2026-02-01T19:53:27.738Z
+69804112ce12edf9ebb3bd3e,"Aamir",founder@lila.com,FOUNDER,2026-02-01T19:53:27.743Z
+69804112ce12edf9ebb3bd44,"Ray C",founder@ai-photo-studio.com,FOUNDER,2026-02-01T19:53:27.747Z
+69804112ce12edf9ebb3bd4a,"Vito B",founder@sprintpulse.com,FOUNDER,2026-02-01T19:53:27.750Z
+69804112ce12edf9ebb3bd50,"th Technology",founder@6th-mind.com,FOUNDER,2026-02-01T19:53:27.754Z
+69804113ce12edf9ebb3bd56,"George H",founder@enquiry-genie.com,FOUNDER,2026-02-01T19:53:27.759Z
+69804113ce12edf9ebb3bd5c,"Ben Spak",founder@popvia.com,FOUNDER,2026-02-01T19:53:27.763Z
+69804113ce12edf9ebb3bd62,"Mike",founder@generatepdfscom.com,FOUNDER,2026-02-01T19:53:27.768Z
+69804113ce12edf9ebb3bd68,"xi",founder@x2i.com,FOUNDER,2026-02-01T19:53:27.772Z
+69804113ce12edf9ebb3bd6e,"Albert",founder@life-rpg.com,FOUNDER,2026-02-01T19:53:27.776Z
+69804113ce12edf9ebb3bd74,"Scott",founder@agent-sequence.com,FOUNDER,2026-02-01T19:53:27.779Z
+69804113ce12edf9ebb3bd7a,"Huzefa",founder@writehybrid.com,FOUNDER,2026-02-01T19:53:27.783Z
+69804113ce12edf9ebb3bd80,"Ria Naik",founder@keikoai.com,FOUNDER,2026-02-01T19:53:27.788Z
+69804113ce12edf9ebb3bd86,"Thaw Tran",founder@visona.com,FOUNDER,2026-02-01T19:53:27.792Z
+69804113ce12edf9ebb3bd8c,"Will Mitchell",founder@pr-bot.com,FOUNDER,2026-02-01T19:53:27.796Z
+69804113ce12edf9ebb3bd92,"Florent Laval",founder@facet.com,FOUNDER,2026-02-01T19:53:27.800Z
+69804113ce12edf9ebb3bd98,"Ak",founder@assistbot.com,FOUNDER,2026-02-01T19:53:27.804Z
+69804114ce12edf9ebb3bd9e,"Andy Ayer",founder@rankloop.com,FOUNDER,2026-02-01T19:53:27.808Z
+69804114ce12edf9ebb3bda4,"Elasticnote",founder@elasticnote.com,FOUNDER,2026-02-01T19:53:27.812Z
+69804114ce12edf9ebb3bdaa,"Rick C",founder@renovationtimeline.com,FOUNDER,2026-02-01T19:53:27.817Z
+69804114ce12edf9ebb3bdb0,"Martin U",founder@rdytofly.com,FOUNDER,2026-02-01T19:53:27.821Z
+69804114ce12edf9ebb3bdb6,"Cagri S",founder@diet-tracker.com,FOUNDER,2026-02-01T19:53:27.825Z
+69804114ce12edf9ebb3bdbc,"Jannik Jung",founder@spectrafm.com,FOUNDER,2026-02-01T19:53:27.828Z
+69804114ce12edf9ebb3bdc2,"Adam Stone",founder@snaggdio.com,FOUNDER,2026-02-01T19:53:27.831Z
+69804114ce12edf9ebb3bdc8,"Cyril Dieumegard",founder@profileaudit.com,FOUNDER,2026-02-01T19:53:27.834Z
+69804114ce12edf9ebb3bdce,"Abdulrahman",founder@creatorbrain.com,FOUNDER,2026-02-01T19:53:27.838Z
+69804114ce12edf9ebb3bdd4,"Jon",founder@preflightsh.com,FOUNDER,2026-02-01T19:53:27.843Z
+69804114ce12edf9ebb3bdda,"Nithish",founder@crustdata.com,FOUNDER,2026-02-01T19:53:27.847Z
+69804114ce12edf9ebb3bde0,"Campbell Yule",founder@team-pulse.com,FOUNDER,2026-02-01T19:53:27.851Z
+69804115ce12edf9ebb3bde6,"Xuan L",founder@komos.com,FOUNDER,2026-02-01T19:53:27.855Z
+69804115ce12edf9ebb3bdec,"Lee",founder@quadrants.com,FOUNDER,2026-02-01T19:53:27.859Z
+69804115ce12edf9ebb3bdf2,"Evaldas",founder@guideless.com,FOUNDER,2026-02-01T19:53:27.863Z
+69804115ce12edf9ebb3bdf8,"Srikant V",founder@nueo.com,FOUNDER,2026-02-01T19:53:27.867Z
+69804115ce12edf9ebb3bdfe,"Greg",founder@qeebo.com,FOUNDER,2026-02-01T19:53:27.871Z
+69804115ce12edf9ebb3be04,"Alex",founder@crackedai.com,FOUNDER,2026-02-01T19:53:27.875Z
+69804115ce12edf9ebb3be0a,"Jake",founder@clientkit.com,FOUNDER,2026-02-01T19:53:27.879Z
+69804115ce12edf9ebb3be10,"Yann",founder@featurehunter.com,FOUNDER,2026-02-01T19:53:27.882Z
+69804115ce12edf9ebb3be16,"Harry P",founder@nano-banana.com,FOUNDER,2026-02-01T19:53:27.887Z
+69804115ce12edf9ebb3be1c,"Alex S",founder@vibemarketing.com,FOUNDER,2026-02-01T19:53:27.892Z
+69804115ce12edf9ebb3be22,"Dmytro T",founder@lucideanimated.com,FOUNDER,2026-02-01T19:53:27.895Z
+69804115ce12edf9ebb3be28,"Mathieu",founder@pictiny.com,FOUNDER,2026-02-01T19:53:27.898Z
+69804116ce12edf9ebb3be2e,"Corbin",founder@redmo.com,FOUNDER,2026-02-01T19:53:27.901Z
+69804116ce12edf9ebb3be34,"Zhong X",founder@highlightgpt.com,FOUNDER,2026-02-01T19:53:27.904Z
+69804116ce12edf9ebb3be3a,"Charles",founder@gymgod-weightlifting.com,FOUNDER,2026-02-01T19:53:27.908Z
+69804116ce12edf9ebb3be40,"Sketch To",founder@sketch-to.com,FOUNDER,2026-02-01T19:53:27.913Z
+69804116ce12edf9ebb3be46,"Funy AI ImagetoVideo",founder@funy-ai-imagetovideo.com,FOUNDER,2026-02-01T19:53:27.916Z
+69804116ce12edf9ebb3be4c,"Kc",founder@orgchartstudio.com,FOUNDER,2026-02-01T19:53:27.920Z
+69804116ce12edf9ebb3be52,"Walter J",founder@imaygen.com,FOUNDER,2026-02-01T19:53:27.924Z
+69804116ce12edf9ebb3be58,"Keble",founder@rewarxstudio.com,FOUNDER,2026-02-01T19:53:27.928Z
+69804116ce12edf9ebb3be5e,"Terry",founder@rsw-sora-2-ai-studio.com,FOUNDER,2026-02-01T19:53:27.934Z
+69804116ce12edf9ebb3be64,"Red L",founder@notifygate.com,FOUNDER,2026-02-01T19:53:27.937Z
+69804116ce12edf9ebb3be6a,"Richelo K",founder@build-in-public-log.com,FOUNDER,2026-02-01T19:53:27.941Z
+69804116ce12edf9ebb3be70,"Paper Animation Tool",founder@paper-animation-tool.com,FOUNDER,2026-02-01T19:53:27.945Z
+69804117ce12edf9ebb3be76,"Jane",founder@workppt.com,FOUNDER,2026-02-01T19:53:27.948Z
+69804117ce12edf9ebb3be7c,"Benjamin Z",founder@clicklabs.com,FOUNDER,2026-02-01T19:53:27.951Z
+69804117ce12edf9ebb3be82,"Tristan",founder@atra-terminal.com,FOUNDER,2026-02-01T19:53:27.955Z
+69804117ce12edf9ebb3be88,"AI PDF Assistant",founder@ai-pdf-assistant.com,FOUNDER,2026-02-01T19:53:27.958Z
+69804117ce12edf9ebb3be8e,"Dmytro",founder@getnowdate.com,FOUNDER,2026-02-01T19:53:27.962Z
+69804117ce12edf9ebb3be94,"Josh",founder@step.com,FOUNDER,2026-02-01T19:53:27.965Z
+69804117ce12edf9ebb3be9a,"Danny",founder@tarantillo.com,FOUNDER,2026-02-01T19:53:27.969Z
+69804117ce12edf9ebb3bea0,"Atoms",founder@atoms.com,FOUNDER,2026-02-01T19:53:27.972Z
+69804118ce12edf9ebb3bea6,"Eddie",founder@orchata.com,FOUNDER,2026-02-01T19:53:27.975Z
+69804118ce12edf9ebb3beac,"Karlgustav K",founder@attensira.com,FOUNDER,2026-02-01T19:53:27.978Z
+69804118ce12edf9ebb3beb2,"Sanjay",founder@saasbox.com,FOUNDER,2026-02-01T19:53:27.982Z
+69804118ce12edf9ebb3beb8,"Jordan S",founder@ghostscroll.com,FOUNDER,2026-02-01T19:53:27.987Z
+69804118ce12edf9ebb3bebe,"Tykonio",founder@tykonio.com,FOUNDER,2026-02-01T19:53:27.990Z
+69804118ce12edf9ebb3bec4,"Anton",founder@publyto.com,FOUNDER,2026-02-01T19:53:27.994Z
+69804118ce12edf9ebb3beca,"Nrupak S",founder@grow-fit.com,FOUNDER,2026-02-01T19:53:27.997Z
+69804118ce12edf9ebb3bed0,"Harry P",founder@seedance-15-pro.com,FOUNDER,2026-02-01T19:53:28.001Z
+69804118ce12edf9ebb3bed6,"Dave M",founder@weddingstory.com,FOUNDER,2026-02-01T19:53:28.005Z
+69804118ce12edf9ebb3bedc,"Daniel K",founder@thumbnails-studio.com,FOUNDER,2026-02-01T19:53:28.010Z
+69804118ce12edf9ebb3bee2,"Luxa",founder@transcriptr.com,FOUNDER,2026-02-01T19:53:28.014Z
+69804118ce12edf9ebb3bee8,"Gleb S",founder@anysite.com,FOUNDER,2026-02-01T19:53:28.018Z
+69804119ce12edf9ebb3beee,"Gleb S",founder@songguru.com,FOUNDER,2026-02-01T19:53:28.025Z
+69804119ce12edf9ebb3bef4,"Mitch",founder@scrollwise-ai.com,FOUNDER,2026-02-01T19:53:28.031Z
+69804119ce12edf9ebb3befa,"Phil L",founder@elser-ai.com,FOUNDER,2026-02-01T19:53:28.035Z
+69804119ce12edf9ebb3bf00,"Yogesh",founder@supalytics.com,FOUNDER,2026-02-01T19:53:28.041Z
+69804119ce12edf9ebb3bf06,"Leadly OneTap",founder@leadly-onetap.com,FOUNDER,2026-02-01T19:53:28.047Z
+69804119ce12edf9ebb3bf0c,"David",founder@rollin.com,FOUNDER,2026-02-01T19:53:28.052Z
+69804119ce12edf9ebb3bf12,"David",founder@cv-shortlist.com,FOUNDER,2026-02-01T19:53:28.057Z
+69804119ce12edf9ebb3bf18,"SOC Audit Cost",founder@soc-2-audit-cost.com,FOUNDER,2026-02-01T19:53:28.063Z
+69804119ce12edf9ebb3bf1e,"Echother",founder@echother.com,FOUNDER,2026-02-01T19:53:28.068Z
+69804119ce12edf9ebb3bf24,"Pernox AI",founder@pernox-ai.com,FOUNDER,2026-02-01T19:53:28.072Z
+69804119ce12edf9ebb3bf2a,"Evolvoomio",founder@evolvoomio.com,FOUNDER,2026-02-01T19:53:28.077Z
+69804119ce12edf9ebb3bf30,"Jason",founder@micropawn.com,FOUNDER,2026-02-01T19:53:28.083Z
+6980411ace12edf9ebb3bf36,"Michael C",founder@linkzy.com,FOUNDER,2026-02-01T19:53:28.089Z
+6980411ace12edf9ebb3bf3c,"Leonid G",founder@portfolio-genius.com,FOUNDER,2026-02-01T19:53:28.093Z
+6980411ace12edf9ebb3bf42,"Vlad D",founder@indexmachine.com,FOUNDER,2026-02-01T19:53:28.098Z
+6980411ace12edf9ebb3bf48,"Hale",founder@hale.com,FOUNDER,2026-02-01T19:53:28.101Z
+6980411ace12edf9ebb3bf4e,"Anton",founder@sendproofio.com,FOUNDER,2026-02-01T19:53:28.105Z
+6980411ace12edf9ebb3bf54,"Gabe",founder@drive-io.com,FOUNDER,2026-02-01T19:53:28.108Z
+6980411ace12edf9ebb3bf5a,"Ask Weather",founder@ask-weather.com,FOUNDER,2026-02-01T19:53:28.111Z
+6980411ace12edf9ebb3bf60,"LiveD",founder@live3d.com,FOUNDER,2026-02-01T19:53:28.115Z
+6980411ace12edf9ebb3bf66,"Tom",founder@insertrr.com,FOUNDER,2026-02-01T19:53:28.120Z
+6980411ace12edf9ebb3bf6c,"Sean",founder@edgen.com,FOUNDER,2026-02-01T19:53:28.124Z
+6980411ace12edf9ebb3bf72,"Moltbook Town",founder@moltbook-town.com,FOUNDER,2026-02-01T19:53:28.129Z
+6980411ace12edf9ebb3bf78,"Saystory",founder@saystory.com,FOUNDER,2026-02-01T19:53:28.133Z
+6980411bce12edf9ebb3bf7e,"Andrei S",founder@prettyinsights.com,FOUNDER,2026-02-01T19:53:28.136Z
+6980411bce12edf9ebb3bf84,"Meishi",founder@meishi.com,FOUNDER,2026-02-01T19:53:28.139Z
+6980411bce12edf9ebb3bf8a,"Itnova",founder@itnova.com,FOUNDER,2026-02-01T19:53:28.142Z
+6980411bce12edf9ebb3bf90,"James",founder@eleidon.com,FOUNDER,2026-02-01T19:53:28.145Z
+6980411bce12edf9ebb3bf96,"James",founder@wellnest.com,FOUNDER,2026-02-01T19:53:28.149Z
+6980411bce12edf9ebb3bf9c,"Joao V",founder@zapzipped.com,FOUNDER,2026-02-01T19:53:28.152Z
+6980411bce12edf9ebb3bfa2,"SAMD",founder@sam3d.com,FOUNDER,2026-02-01T19:53:28.156Z
+6980411bce12edf9ebb3bfa8,"Buildables",founder@buildables.com,FOUNDER,2026-02-01T19:53:28.159Z
+6980411bce12edf9ebb3bfae,"Mediafast",founder@mediafast.com,FOUNDER,2026-02-01T19:53:28.162Z
+6980411bce12edf9ebb3bfb4,"Shobrun",founder@anystory.com,FOUNDER,2026-02-01T19:53:28.166Z
+6980411bce12edf9ebb3bfba,"QuantLedger",founder@quantledger.com,FOUNDER,2026-02-01T19:53:28.171Z
+6980411bce12edf9ebb3bfc0,"Mention Broker",founder@mention-broker.com,FOUNDER,2026-02-01T19:53:28.175Z
+6980411cce12edf9ebb3bfc6,"ordinalforgov",founder@ordinalforgov.com,FOUNDER,2026-02-01T19:53:28.178Z
+6980411cce12edf9ebb3bfcc,"Poison Pill",founder@poison-pill.com,FOUNDER,2026-02-01T19:53:28.181Z
+6980411cce12edf9ebb3bfd2,"Kai",founder@server_compass.com,FOUNDER,2026-02-01T19:53:28.184Z
+6980411cce12edf9ebb3bfd8,"Next Enhancer AI",founder@next-enhancer-ai.com,FOUNDER,2026-02-01T19:53:28.188Z
+6980411cce12edf9ebb3bfde,"Agenta",founder@agenta.com,FOUNDER,2026-02-01T19:53:28.192Z
+6980411cce12edf9ebb3bfe4,"MakeBestMusic",founder@makebestmusic.com,FOUNDER,2026-02-01T19:53:28.195Z
+6980411cce12edf9ebb3bfea,"Evgenia",founder@baltex.com,FOUNDER,2026-02-01T19:53:28.198Z
+6980411cce12edf9ebb3bff0,"Hazem T",founder@day-off.com,FOUNDER,2026-02-01T19:53:28.201Z
+6980411cce12edf9ebb3bff6,"Docket",founder@docketqa.com,FOUNDER,2026-02-01T19:53:28.205Z
+6980411cce12edf9ebb3bffc,"Chord",founder@chord.com,FOUNDER,2026-02-01T19:53:28.208Z
+6980411cce12edf9ebb3c002,"Tracy W",founder@twt-chat.com,FOUNDER,2026-02-01T19:53:28.212Z
+6980411dce12edf9ebb3c008,"holyfocus",founder@holyfocus.com,FOUNDER,2026-02-01T19:53:28.215Z
+6980411dce12edf9ebb3c00e,"Vidha Tanand",founder@fragmatic.com,FOUNDER,2026-02-01T19:53:28.218Z
+6980411dce12edf9ebb3c014,"Leadjot",founder@leadjot.com,FOUNDER,2026-02-01T19:53:28.221Z
+6980411dce12edf9ebb3c01a,"Ibraheem",founder@postpulse.com,FOUNDER,2026-02-01T19:53:28.225Z
+6980411dce12edf9ebb3c020,"Robert F",founder@trendedge.com,FOUNDER,2026-02-01T19:53:28.229Z
+6980411dce12edf9ebb3c026,"Paul K",founder@blinkdisk.com,FOUNDER,2026-02-01T19:53:28.235Z
+6980411dce12edf9ebb3c02c,"Anomaly AI",founder@anomaly-ai.com,FOUNDER,2026-02-01T19:53:28.239Z
+6980411dce12edf9ebb3c032,"David",founder@daisy-ai.com,FOUNDER,2026-02-01T19:53:28.242Z
+6980411dce12edf9ebb3c038,"Dan",founder@build-desk.com,FOUNDER,2026-02-01T19:53:28.246Z
+6980411dce12edf9ebb3c03e,"Skyvern",founder@skyvern.com,FOUNDER,2026-02-01T19:53:28.250Z
+6980411dce12edf9ebb3c044,"Feen",founder@feen.com,FOUNDER,2026-02-01T19:53:28.254Z
+6980411dce12edf9ebb3c04a,"Lovarank",founder@lovarank.com,FOUNDER,2026-02-01T19:53:28.258Z
+6980411ece12edf9ebb3c050,"Priyam R",founder@affok.com,FOUNDER,2026-02-01T19:53:28.261Z
+6980411ece12edf9ebb3c056,"Dan",founder@rare-big-deal.com,FOUNDER,2026-02-01T19:53:28.266Z
+6980411ece12edf9ebb3c05c,"Clemstation",founder@stretch-it.com,FOUNDER,2026-02-01T19:53:28.270Z
+6980411ece12edf9ebb3c062,"Echo",founder@crepal.com,FOUNDER,2026-02-01T19:53:28.276Z
+6980411ece12edf9ebb3c068,"Kevin",founder@voicecheap.com,FOUNDER,2026-02-01T19:53:28.279Z
+6980411ece12edf9ebb3c06e,"Zest",founder@zest.com,FOUNDER,2026-02-01T19:53:28.282Z
+6980411ece12edf9ebb3c074,"Marco E",founder@flowtion.com,FOUNDER,2026-02-01T19:53:28.286Z
+6980411ece12edf9ebb3c07a,"Latent H",founder@latent-hq.com,FOUNDER,2026-02-01T19:53:28.289Z
+6980411ece12edf9ebb3c080,"Matteo A",founder@rocketship.com,FOUNDER,2026-02-01T19:53:28.294Z
+6980411ece12edf9ebb3c086,"Oliver S",founder@taxingapp.com,FOUNDER,2026-02-01T19:53:28.298Z
+6980411ece12edf9ebb3c08c,"Localflare",founder@localflare.com,FOUNDER,2026-02-01T19:53:28.301Z
+6980411ece12edf9ebb3c092,"PortaBase",founder@portabase.com,FOUNDER,2026-02-01T19:53:28.304Z
+6980411fce12edf9ebb3c098,"Docker Android",founder@docker-android.com,FOUNDER,2026-02-01T19:53:28.307Z
+6980411fce12edf9ebb3c09e,"Browser Cash",founder@browser-cash.com,FOUNDER,2026-02-01T19:53:28.310Z
+6980411fce12edf9ebb3c0a4,"Claude Hud",founder@claude-hud.com,FOUNDER,2026-02-01T19:53:28.314Z
+6980411fce12edf9ebb3c0aa,"RayAI",founder@rayai.com,FOUNDER,2026-02-01T19:53:28.318Z
+6980411fce12edf9ebb3c0b0,"Maily",founder@maily.com,FOUNDER,2026-02-01T19:53:28.322Z
+6980411fce12edf9ebb3c0b6,"Blinko",founder@blinko.com,FOUNDER,2026-02-01T19:53:28.325Z
+6980411fce12edf9ebb3c0bc,"Checkmate",founder@checkmate.com,FOUNDER,2026-02-01T19:53:28.328Z
+6980411fce12edf9ebb3c0c2,"Typesense",founder@typesense.com,FOUNDER,2026-02-01T19:53:28.331Z
+6980411fce12edf9ebb3c0c8,"ClawdBot",founder@clawdbot.com,FOUNDER,2026-02-01T19:53:28.335Z
+6980411fce12edf9ebb3c0ce,"Renoun",founder@renoun.com,FOUNDER,2026-02-01T19:53:28.339Z
+6980411fce12edf9ebb3c0d4,"Solidtype",founder@solidtype.com,FOUNDER,2026-02-01T19:53:28.342Z
+6980411fce12edf9ebb3c0da,"Oh My Opencode",founder@oh-my-opencode.com,FOUNDER,2026-02-01T19:53:28.345Z
+69804120ce12edf9ebb3c0e0,"Keep",founder@keep.com,FOUNDER,2026-02-01T19:53:28.348Z
+69804120ce12edf9ebb3c0e6,"Agency OS",founder@agency-os.com,FOUNDER,2026-02-01T19:53:28.351Z
+69804120ce12edf9ebb3c0ec,"Nanocode",founder@nanocode.com,FOUNDER,2026-02-01T19:53:28.354Z
+69804120ce12edf9ebb3c0f2,"Mockly",founder@mockly.com,FOUNDER,2026-02-01T19:53:28.359Z
+69804120ce12edf9ebb3c0f8,"Jamie P",founder@posteverywhereai.com,FOUNDER,2026-02-01T19:53:28.362Z
+69804120ce12edf9ebb3c0fe,"Open Claude Cowork",founder@open-claude-cowork.com,FOUNDER,2026-02-01T19:53:28.365Z
+69804120ce12edf9ebb3c104,"AgentCraft",founder@agentcraft.com,FOUNDER,2026-02-01T19:53:28.368Z
+69804120ce12edf9ebb3c10a,"Vibecraft",founder@vibecraft.com,FOUNDER,2026-02-01T19:53:28.371Z
+69804120ce12edf9ebb3c110,"Kartik",founder@oneurllive.com,FOUNDER,2026-02-01T19:53:28.374Z
+69804120ce12edf9ebb3c116,"CodexBar",founder@codexbar.com,FOUNDER,2026-02-01T19:53:28.379Z
+69804120ce12edf9ebb3c11c,"Rankad",founder@rankad.com,FOUNDER,2026-02-01T19:53:28.382Z
+69804121ce12edf9ebb3c122,"Chargeflow",founder@chargeflow.com,FOUNDER,2026-02-01T19:53:28.386Z
+69804121ce12edf9ebb3c128,"Bertan K",founder@lygos.com,FOUNDER,2026-02-01T19:53:28.389Z
+69804121ce12edf9ebb3c12e,"Bertan K",founder@highlightsai.com,FOUNDER,2026-02-01T19:53:28.393Z
+69804121ce12edf9ebb3c134,"Tom",founder@freelanceos.com,FOUNDER,2026-02-01T19:53:28.397Z
+69804121ce12edf9ebb3c13a,"JJ",founder@triggle.com,FOUNDER,2026-02-01T19:53:28.401Z
+69804121ce12edf9ebb3c140,"Skope",founder@skope.com,FOUNDER,2026-02-01T19:53:28.404Z
+69804121ce12edf9ebb3c146,"Podium",founder@podium.com,FOUNDER,2026-02-01T19:53:28.408Z
+69804121ce12edf9ebb3c14c,"Pencil",founder@pencil.com,FOUNDER,2026-02-01T19:53:28.411Z
+69804121ce12edf9ebb3c152,"Karumi AI",founder@karumi-ai.com,FOUNDER,2026-02-01T19:53:28.415Z
+69804121ce12edf9ebb3c158,"Teemux",founder@teemux.com,FOUNDER,2026-02-01T19:53:28.420Z
+69804121ce12edf9ebb3c15e,"Ropilot AI",founder@ropilot-ai.com,FOUNDER,2026-02-01T19:53:28.423Z
+69804121ce12edf9ebb3c164,"The Interface",founder@the-interface.com,FOUNDER,2026-02-01T19:53:28.426Z
+69804122ce12edf9ebb3c16a,"Ovidiu S",founder@tips-from-investors.com,FOUNDER,2026-02-01T19:53:28.430Z
+69804122ce12edf9ebb3c170,"Stephen D",founder@atelq-ai-calorie-tracker.com,FOUNDER,2026-02-01T19:53:28.434Z
+69804122ce12edf9ebb3c176,"Sergey B",founder@kidteller.com,FOUNDER,2026-02-01T19:53:28.439Z
+69804122ce12edf9ebb3c17c,"Macaron A",founder@macaron-ai.com,FOUNDER,2026-02-01T19:53:28.444Z
+69804122ce12edf9ebb3c182,"Billite",founder@billite.com,FOUNDER,2026-02-01T19:53:28.447Z
+69804122ce12edf9ebb3c188,"Varun C",founder@variant-ai.com,FOUNDER,2026-02-01T19:53:28.450Z
+69804122ce12edf9ebb3c18e,"UI Layouts",founder@ui-layouts.com,FOUNDER,2026-02-01T19:53:28.453Z
+69804122ce12edf9ebb3c194,"MakeComics",founder@makecomics.com,FOUNDER,2026-02-01T19:53:28.456Z
+69804122ce12edf9ebb3c19a,"Companion AI",founder@companion-ai.com,FOUNDER,2026-02-01T19:53:28.460Z
+69804122ce12edf9ebb3c1a0,"TinyFish AI",founder@tinyfish-ai.com,FOUNDER,2026-02-01T19:53:28.465Z
+69804122ce12edf9ebb3c1a6,"Saurabh Sugandh",support@sudodocs.com,FOUNDER,2026-02-01T19:56:09.390Z
+69804122ce12edf9ebb3c1ac,"Jason Chen",support@gurutrans.app,FOUNDER,2026-02-01T19:56:09.407Z
+69804123ce12edf9ebb3c1b2,"Mike Nam",support@auriq.com,FOUNDER,2026-02-01T19:56:09.413Z
+69804123ce12edf9ebb3c1b8,"Olivier Delafosse",contact@coreprose.com,FOUNDER,2026-02-01T19:56:09.419Z
+69804123ce12edf9ebb3c1be,"Garrett Eaglin",support@thepromptfixer.com,FOUNDER,2026-02-01T19:56:09.425Z
+69804123ce12edf9ebb3c1c4,"Garrett Eaglin",support@rezfix.app,FOUNDER,2026-02-01T19:56:09.431Z
+69804123ce12edf9ebb3c1ca,"Klym ZhuravlovIuzefovych",contact@videosummarizerai.com,FOUNDER,2026-02-01T19:56:09.436Z
+69804123ce12edf9ebb3c1d0,"Muhammed Valli",info@readdocs.co.uk,FOUNDER,2026-02-01T19:56:09.441Z
+69804123ce12edf9ebb3c1d6,"IdeaProof",founder@ideaproof.com,FOUNDER,2026-02-01T19:56:09.447Z
+69804123ce12edf9ebb3c1dc,"Vonvo",hello@vonvo.ai,FOUNDER,2026-02-01T19:56:09.452Z
+69804123ce12edf9ebb3c1e2,"Musharof Chowdhury",support@aymo.ai,FOUNDER,2026-02-01T19:56:09.456Z
+69804123ce12edf9ebb3c1e8,"Teemu Kinos Michele Boggia Teppo Hudsson",dpo@skene.ai,FOUNDER,2026-02-01T19:56:09.460Z
+69804123ce12edf9ebb3c1ee,"Zest",support@zestcode.ai,FOUNDER,2026-02-01T19:56:09.464Z
+69804123ce12edf9ebb3c1f4,"Oleg Kozynenko",oleg@aiseomate.com,FOUNDER,2026-02-01T19:56:09.471Z
+69804124ce12edf9ebb3c1fa,"Maciej Turek",maciej@turek.com,FOUNDER,2026-02-01T19:56:09.475Z
+69804124ce12edf9ebb3c200,"Conor Martin",conor@conormartin.com,FOUNDER,2026-02-01T19:56:09.479Z
+69804124ce12edf9ebb3c206,"Sean Tao Allen Ng",legal@edgen.tech,FOUNDER,2026-02-01T19:56:09.483Z
+69804124ce12edf9ebb3c20c,"AlertBot",helpdesk@alertbot.com,FOUNDER,2026-02-01T19:56:09.487Z
+69804124ce12edf9ebb3c212,"Panellog",founder@panellog.com,FOUNDER,2026-02-01T19:56:09.491Z
+69804124ce12edf9ebb3c218,"Newtab",founder@newtab.com,FOUNDER,2026-02-01T19:56:09.495Z
+69804124ce12edf9ebb3c21e,"Robbie Cargill Markus Wilson",contact@buildstash.com,FOUNDER,2026-02-01T19:56:09.500Z
+69804124ce12edf9ebb3c224,"VDOC",enquiry@virtualrealdesign.com,FOUNDER,2026-02-01T19:56:09.505Z
+69804124ce12edf9ebb3c22a,"Daniel Kempe",hello@supawrite.com,FOUNDER,2026-02-01T19:56:09.510Z
+69804124ce12edf9ebb3c230,"Vibe Coding App",hello@vibecoding.app,FOUNDER,2026-02-01T19:56:09.516Z
+69804124ce12edf9ebb3c236,"Fahd Rafi Asad Iqbal",support@noodleseed.com,FOUNDER,2026-02-01T19:56:09.521Z
+69804125ce12edf9ebb3c23c,"Serversageai",founder@serversageai.com,FOUNDER,2026-02-01T19:56:09.526Z
+69804125ce12edf9ebb3c242,"SocialRails",founder@socialrails.com,FOUNDER,2026-02-01T19:56:09.531Z
+69804125ce12edf9ebb3c248,"PageDock",founder@pagedock.com,FOUNDER,2026-02-01T19:56:09.535Z
+69804125ce12edf9ebb3c24e,"SocialPost",founder@socialpost.com,FOUNDER,2026-02-01T19:56:09.540Z
+69804125ce12edf9ebb3c254,"GeoNudge",founder@geonudge.com,FOUNDER,2026-02-01T19:56:09.544Z
+69804125ce12edf9ebb3c25a,"AEO Optimizer",founder@aeo-optimizer.com,FOUNDER,2026-02-01T19:56:09.550Z
+69804125ce12edf9ebb3c260,"Wolfy",founder@wolfy.com,FOUNDER,2026-02-01T19:56:09.555Z
+69804125ce12edf9ebb3c266,"AIVO",founder@aivo.com,FOUNDER,2026-02-01T19:56:09.559Z
+69804125ce12edf9ebb3c26c,"Dapple",founder@dapple.com,FOUNDER,2026-02-01T19:56:09.565Z
+69804125ce12edf9ebb3c272,"Askruit",founder@askruit.com,FOUNDER,2026-02-01T19:56:09.569Z
+69804125ce12edf9ebb3c278,"Reelu",founder@reelu.com,FOUNDER,2026-02-01T19:56:09.574Z
+69804125ce12edf9ebb3c27e,"Jobari",founder@jobari.com,FOUNDER,2026-02-01T19:56:09.579Z
+69804126ce12edf9ebb3c284,"AssetsAnalyzer",founder@assetsanalyzer.com,FOUNDER,2026-02-01T19:56:09.584Z
+69804126ce12edf9ebb3c28a,"AssetScape",founder@assetscape.com,FOUNDER,2026-02-01T19:56:09.589Z
+69804126ce12edf9ebb3c290,"Outsampler",founder@outsampler.com,FOUNDER,2026-02-01T19:56:09.595Z
+69804126ce12edf9ebb3c296,"Tellus",founder@tellus.com,FOUNDER,2026-02-01T19:56:09.601Z
+69804126ce12edf9ebb3c29c,"NemoVideo",founder@nemovideo.com,FOUNDER,2026-02-01T19:56:09.605Z
+698249d4232be6a18934522a,"Adarsh",adarsh13082008@gmail.com,FOUNDER,2026-02-03T19:17:40.953Z
+69824d34232be6a189345260,"Soumil Jain",soumilj2017@email.iimcal.ac.in,FOUNDER,2026-02-03T19:32:04.112Z
+6982e8ef28286c29588c5fa8,"edutainverse verse",edutainverse@gmail.com,FOUNDER,2026-02-04T06:36:31.756Z
+69830e2db60da0cd85119a7f,"BrewQuant",support@brewquant.com,FOUNDER,2026-02-04T09:15:25.239Z
+698372bae366f48bd9c7e3d1,"Shobhit Jaiswal",shobhitjas0505@gmail.com,FOUNDER,2026-02-04T16:24:26.915Z
+6984b4ad8271cf4cef47e6af,"Vivek",sr2636463@gmail.com,CUSTOMER,2026-02-05T15:18:05.038Z
+698513257644dd188fbde4f0,"Insure Wise",appinsurewise@gmail.com,FOUNDER,2026-02-05T22:01:09.290Z
+6985bf3c7644dd188fbde681,"Kwikmedi",kwikmedisocial@gmail.com,FOUNDER,2026-02-06T10:15:24.482Z
