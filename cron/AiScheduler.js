@@ -3,6 +3,7 @@ const AIJob = require('../models/AIJob');
 const AIJobRun = require('../models/AIJobRun');
 const Newsletter = require('../models/Newsletter');
 const { generateNewsletterContent } = require('../services/aiService');
+const { sendNewsletter } = require('../services/sendingEngine');
 
 // Store active cron tasks
 let activeJobs = new Map();
@@ -105,6 +106,17 @@ async function executeJob(jobId) {
             scheduled_at: job.config.autoSend ? new Date() : null
         });
         await newsletter.save();
+
+        if (job.config.autoSend) {
+            console.log(`[AI Scheduler] Auto-sending newsletter ${newsletter._id}`);
+            const stats = await sendNewsletter(newsletter._id);
+
+            run.sent = true;
+            run.recipientCount = stats.sent;
+            newsletter.status = 'SENT';
+            newsletter.sent_at = new Date();
+            await newsletter.save();
+        }
 
         run.generated = true;
         run.newsletterId = newsletter._id;

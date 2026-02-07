@@ -6,12 +6,12 @@ const ProductStats = require('../models/ProductStats');
 const OutboundClick = require('../models/OutboundClick');
 const WalletTransaction = require('../models/WalletTransaction');
 const Campaign = require('../models/Campaign');
-const auth = require('../middleware/auth');
+const requirePermission = require('../middleware/requirePermission');
 const { asyncHandler, sendSuccess } = require('../utils/response');
 
 // @route   GET /api/admin/kpis/dashboard
 // @desc    Main dashboard with 14 KPIs
-router.get('/dashboard', auth(['ADMIN']), asyncHandler(async (req, res) => {
+router.get('/dashboard', requirePermission('DASHBOARD_VIEW'), asyncHandler(async (req, res) => {
     const now = new Date();
     const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
 
@@ -88,7 +88,7 @@ router.get('/dashboard', auth(['ADMIN']), asyncHandler(async (req, res) => {
 
 // @route   GET /api/admin/kpis/overview
 // @desc    Platform scale metrics
-router.get('/overview', auth(['ADMIN']), asyncHandler(async (req, res) => {
+router.get('/overview', requirePermission('DASHBOARD_VIEW'), asyncHandler(async (req, res) => {
     const [userStats, productStats, topRated, recent] = await Promise.all([
         User.aggregate([
             {
@@ -148,7 +148,7 @@ router.get('/overview', auth(['ADMIN']), asyncHandler(async (req, res) => {
 
 // @route   GET /api/admin/kpis/traffic
 // @desc    Click analytics and traffic data
-router.get('/traffic', auth(['ADMIN']), asyncHandler(async (req, res) => {
+router.get('/traffic', requirePermission('DASHBOARD_VIEW'), asyncHandler(async (req, res) => {
     const now = new Date();
     const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
     const sevenDaysAgo = new Date(todayStart);
@@ -199,7 +199,7 @@ router.get('/traffic', auth(['ADMIN']), asyncHandler(async (req, res) => {
 
 // @route   GET /api/admin/kpis/economics
 // @desc    Credits, revenue, wallet metrics
-router.get('/economics', auth(['ADMIN']), asyncHandler(async (req, res) => {
+router.get('/economics', requirePermission('DASHBOARD_VIEW'), asyncHandler(async (req, res) => {
     const [creditStats, topSpenders, walletsNearZero] = await Promise.all([
         WalletTransaction.aggregate([
             {
@@ -260,7 +260,7 @@ router.get('/economics', auth(['ADMIN']), asyncHandler(async (req, res) => {
 
 // @route   GET /api/admin/kpis/campaigns
 // @desc    Boost campaign analytics
-router.get('/campaigns', auth(['ADMIN']), asyncHandler(async (req, res) => {
+router.get('/campaigns', requirePermission('DASHBOARD_VIEW'), asyncHandler(async (req, res) => {
     const now = new Date();
     const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
 
@@ -334,7 +334,7 @@ router.get('/campaigns', auth(['ADMIN']), asyncHandler(async (req, res) => {
 
 // @route   GET /api/admin/kpis/moderation
 // @desc    Moderation queue and user management
-router.get('/moderation', auth(['ADMIN']), asyncHandler(async (req, res) => {
+router.get('/moderation', requirePermission('DASHBOARD_VIEW'), asyncHandler(async (req, res) => {
     const [pendingProducts, recentRejections, bannedUsers] = await Promise.all([
         Product.find({ status: 'pending' })
             .sort({ created_at: -1 })

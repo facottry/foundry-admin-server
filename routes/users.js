@@ -3,12 +3,12 @@ const router = express.Router();
 const User = require('../models/User');
 const Product = require('../models/Product');
 const WalletTransaction = require('../models/WalletTransaction');
-const auth = require('../middleware/auth');
+const requirePermission = require('../middleware/requirePermission');
 const { asyncHandler, sendSuccess, sendError } = require('../utils/response');
 
 // @route   GET /api/admin/users
 // @desc    Get all users with stats
-router.get('/', auth(['ADMIN']), asyncHandler(async (req, res) => {
+router.get('/', requirePermission('FOUNDERS_VIEW'), asyncHandler(async (req, res) => {
     const page = parseInt(req.query.page) || 1;
     const limit = parseInt(req.query.limit) || 10;
     const skip = (page - 1) * limit;
@@ -75,7 +75,7 @@ router.get('/', auth(['ADMIN']), asyncHandler(async (req, res) => {
 
 // @route   GET /api/admin/users/:id
 // @desc    Get user detail with full stats
-router.get('/:id', auth(['ADMIN']), asyncHandler(async (req, res, next) => {
+router.get('/:id', requirePermission('FOUNDERS_VIEW'), asyncHandler(async (req, res, next) => {
     const user = await User.findById(req.params.id);
     if (!user) return sendError(next, 'NOT_FOUND', 'User not found', 404);
 

@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
 
-const sendEmail = async (to, subject, text, html = null) => {
+const sendEmail = async (to, subject, text, html = null, bcc = null) => {
     try {
         const transporter = nodemailer.createTransport({
             service: 'gmail',
@@ -15,11 +15,12 @@ const sendEmail = async (to, subject, text, html = null) => {
             to,
             subject,
             text,
-            ...(html && { html })
+            ...(html && { html }),
+            ...(bcc && { bcc })
         };
 
         await transporter.sendMail(mailOptions);
-        console.log('Email sent to ' + to);
+        console.log('Email sent to ' + to + (bcc ? ` (BCC: ${bcc})` : ''));
     } catch (err) {
         console.error('Email send error:', err);
         throw err;

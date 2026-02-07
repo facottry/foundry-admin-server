@@ -25,12 +25,18 @@ const db = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/foundryfoundry';
 mongoose.set('strictQuery', false);
 
 // Routes
-app.use('/api/auth', require('./routes/auth')); // For Admin Login
+// DEPRECATED: Old auth uses users collection - kept for backward compatibility during migration
+// app.use('/api/auth', require('./routes/auth'));
+
+// NEW: Dedicated Admin Auth (uses admins collection)
+app.use('/api/admin/auth', require('./routes/adminAuth'));
+
 app.use('/api/admin', require('./routes/admin'));
 app.use('/api/admin/kpis', require('./routes/kpis')); // KPI endpoints
 app.use('/api/admin/messages', require('./routes/messages')); // Contact messages
 app.use('/api/admin/products', require('./routes/products')); // Product management
 app.use('/api/admin/users', require('./routes/users')); // User management
+app.use('/api/admin/admins', require('./routes/admins')); // Admin management (SUPER_ADMIN only)
 
 app.use('/api/admin/config', require('./routes/config')); // System Config
 app.use('/api/admin/personalities', require('./routes/personalities')); // Bot Personalities
@@ -56,6 +62,10 @@ app.use(express.static(path.join(__dirname, 'public'))); // Serve checklist.html
 // Start AI Scheduler
 const { initScheduler } = require('./cron/AiScheduler');
 initScheduler();
+
+// Start Daily Report Cron (9:00 AM)
+const { initDailyReportCron } = require('./cron/dailyReportCron');
+initDailyReportCron();
 
 // Start Image Gen Worker
 const { startWorker } = require('./imagegeneration/worker');

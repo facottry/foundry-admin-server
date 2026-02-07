@@ -1,6 +1,6 @@
 const AIJob = require('../models/AIJob');
 const AIJobRun = require('../models/AIJobRun');
-const { reloadScheduler } = require('../cron/AiScheduler');
+const { reloadScheduler, triggerJob } = require('../cron/AiScheduler');
 const { generateNewsletterContent } = require('../services/aiService');
 const sendEmail = require('../utils/sendEmail');
 
@@ -154,6 +154,21 @@ exports.toggleJob = async (req, res) => {
     }
 };
 
+// POST /api/admin/ai-jobs/:id/run
+exports.runJob = async (req, res) => {
+    try {
+        const job = await AIJob.findById(req.params.id);
+        if (!job) return res.status(404).json({ success: false, error: 'Job not found' });
+
+        // Trigger job asynchronously
+        triggerJob(req.params.id);
+
+        res.json({ success: true, message: 'Job triggered successfully' });
+    } catch (err) {
+        res.status(500).json({ success: false, error: err.message });
+    }
+};
+
 // GET /api/admin/ai-jobs/:id/runs
 exports.getJobRuns = async (req, res) => {
     try {
@@ -193,7 +208,7 @@ exports.previewGenerate = async (req, res) => {
             return res.status(400).json({ success: false, error: 'System prompt is required' });
         }
 
-        const content = await generateNewsletterContent(systemPrompt, aiModel || 'gemini-1.5-flash');
+        const content = await generateNewsletterContent(systemPrompt, aiModel || 'gemini-2.0-flash');
 
         if (!content) {
             return res.status(500).json({ success: false, error: 'AI generation failed' });

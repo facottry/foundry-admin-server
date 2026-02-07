@@ -47,7 +47,7 @@ const AIJobSchema = new mongoose.Schema({
         },
         aiModel: {
             type: String,
-            default: 'gpt-4o-mini'
+            default: 'gemini-2.0-flash'
         },
         autoSend: {
             type: Boolean,
@@ -69,9 +69,27 @@ const AIJobSchema = new mongoose.Schema({
     timestamps: true
 });
 
+const { CronExpressionParser } = require('cron-parser');
+
 // Calculate next run time based on schedule
 AIJobSchema.methods.calculateNextRun = function () {
     const now = new Date();
+
+    // CUSTOM Frequency - Use cron-parser
+    if (this.schedule.frequency === 'CUSTOM') {
+        try {
+            if (!this.schedule.customCron) return null;
+            const interval = CronExpressionParser.parse(this.schedule.customCron);
+            return interval.next().toDate();
+        } catch (err) {
+            console.error('Error parsing cron:', err);
+            return null;
+        }
+    }
+
+    // DAILY/WEEKLY Frequency - Requires time
+    if (!this.schedule.time) return null;
+
     const [hours, minutes] = this.schedule.time.split(':').map(Number);
 
     let nextRun = new Date();

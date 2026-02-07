@@ -3,12 +3,13 @@ const router = express.Router();
 const Product = require('../models/Product');
 const ProductStats = require('../models/ProductStats');
 const User = require('../models/User');
-const auth = require('../middleware/auth');
+const requirePermission = require('../middleware/requirePermission');
 const { asyncHandler, sendSuccess, sendError } = require('../utils/response');
+const { sendEmail } = require('../email-engine');
 
 // @route   GET /api/admin/products
 // @desc    Get all products with stats
-router.get('/', auth(['ADMIN']), asyncHandler(async (req, res) => {
+router.get('/', requirePermission('PRODUCTS_VIEW'), asyncHandler(async (req, res) => {
     const page = parseInt(req.query.page) || 1;
     const limit = parseInt(req.query.limit) || 10;
     const skip = (page - 1) * limit;
@@ -98,7 +99,7 @@ router.get('/', auth(['ADMIN']), asyncHandler(async (req, res) => {
 
 // @route   GET /api/admin/products/:id
 // @desc    Get product detail with full metrics
-router.get('/:id', auth(['ADMIN']), asyncHandler(async (req, res, next) => {
+router.get('/:id', requirePermission('PRODUCTS_VIEW'), asyncHandler(async (req, res, next) => {
     const product = await Product.findById(req.params.id).populate('owner_user_id', 'email name');
     if (!product) return sendError(next, 'NOT_FOUND', 'Product not found', 404);
 
@@ -130,7 +131,7 @@ router.get('/:id', auth(['ADMIN']), asyncHandler(async (req, res, next) => {
 
 // @route   GET /api/admin/products/:id/analytics
 // @desc    Get detailed analytics for a product
-router.get('/:id/analytics', auth(['ADMIN']), asyncHandler(async (req, res, next) => {
+router.get('/:id/analytics', requirePermission('PRODUCTS_VIEW'), asyncHandler(async (req, res, next) => {
     const ProductView = require('../models/ProductView');
     const OutboundClick = require('../models/OutboundClick');
 
@@ -184,7 +185,7 @@ router.get('/:id/analytics', auth(['ADMIN']), asyncHandler(async (req, res, next
 
 // @route   POST /api/admin/products/:id/approve
 // @desc    Approve a pending product
-router.post('/:id/approve', auth(['ADMIN']), asyncHandler(async (req, res, next) => {
+router.post('/:id/approve', requirePermission('PRODUCTS_EDIT'), asyncHandler(async (req, res, next) => {
     const product = await Product.findById(req.params.id);
     if (!product) return sendError(next, 'NOT_FOUND', 'Product not found', 404);
 
@@ -196,12 +197,28 @@ router.post('/:id/approve', auth(['ADMIN']), asyncHandler(async (req, res, next)
     product.traffic_enabled = true; // Auto-enable traffic on approval
     await product.save();
 
+    // Send approval email to founder (non-blocking)
+    const founder = await User.findById(product.owner_user_id);
+    if (founder) {
+        const APP_BASE_URL = process.env.APP_BASE_URL || 'https://clicktory.io';
+        sendEmail({
+            templateKey: 'PRODUCT_APPROVED',
+            to: founder.email,
+            data: {
+                founderName: founder.name,
+                productName: product.name,
+                productUrl: `${APP_BASE_URL}/product/${product.slug}`,
+                productId: product._id.toString()
+            }
+        });
+    }
+
     sendSuccess(res, { message: 'Product approved successfully', product });
 }));
 
 // @route   POST /api/admin/products/:id/reject
 // @desc    Reject a pending product
-router.post('/:id/reject', auth(['ADMIN']), asyncHandler(async (req, res, next) => {
+router.post('/:id/reject', requirePermission('PRODUCTS_EDIT'), asyncHandler(async (req, res, next) => {
     const product = await Product.findById(req.params.id);
     if (!product) return sendError(next, 'NOT_FOUND', 'Product not found', 404);
 

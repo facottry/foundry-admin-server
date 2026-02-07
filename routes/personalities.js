@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const Personality = require('../models/Personality');
-const auth = require('../middleware/auth');
+const requirePermission = require('../middleware/requirePermission');
 
 // GET all personalities
-router.get('/', auth(['ADMIN']), async (req, res) => {
+router.get('/', requirePermission('BOT_PERSONALITIES_EDIT'), async (req, res) => {
     try {
         const personalities = await Personality.find({}).sort({ created_at: -1 });
         res.json(personalities);
@@ -79,7 +79,7 @@ router.get('/mode/:mode', async (req, res) => {
 });
 
 // CREATE personality
-router.post('/', auth(['ADMIN']), async (req, res) => {
+router.post('/', requirePermission('BOT_PERSONALITIES_EDIT'), async (req, res) => {
     try {
         const { name, tone, greeting, isActive, defaultMode, type } = req.body;
 
@@ -108,7 +108,7 @@ router.post('/', auth(['ADMIN']), async (req, res) => {
 });
 
 // UPDATE personality
-router.put('/:id', auth(['ADMIN']), async (req, res) => {
+router.put('/:id', requirePermission('BOT_PERSONALITIES_EDIT'), async (req, res) => {
     try {
         const { name, tone, greeting, defaultMode, type } = req.body;
 
@@ -133,7 +133,7 @@ router.put('/:id', auth(['ADMIN']), async (req, res) => {
 });
 
 // DELETE personality
-router.delete('/:id', auth(['ADMIN']), async (req, res) => {
+router.delete('/:id', requirePermission('BOT_PERSONALITIES_EDIT'), async (req, res) => {
     try {
         const personality = await Personality.findById(req.params.id);
 
@@ -160,7 +160,7 @@ router.delete('/:id', auth(['ADMIN']), async (req, res) => {
 });
 
 // ACTIVATE personality
-router.put('/:id/activate', auth(['ADMIN']), async (req, res) => {
+router.put('/:id/activate', requirePermission('BOT_PERSONALITIES_EDIT'), async (req, res) => {
     try {
         const personality = await Personality.findById(req.params.id);
         if (!personality) {

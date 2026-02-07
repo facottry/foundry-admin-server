@@ -2,9 +2,10 @@ const express = require('express');
 const router = express.Router();
 const Newsletter = require('../models/Newsletter');
 const { sendNewsletter } = require('../services/sendingEngine');
+const requirePermission = require('../middleware/requirePermission');
 
 // 1. List Newsletters
-router.get('/', async (req, res) => {
+router.get('/', requirePermission('NEWSLETTER_EDIT'), async (req, res) => {
     try {
         const newsletters = await Newsletter.find().sort({ createdAt: -1 });
         res.json(newsletters);
@@ -15,7 +16,7 @@ router.get('/', async (req, res) => {
 });
 
 // 2. Create Draft
-router.post('/', async (req, res) => {
+router.post('/', requirePermission('NEWSLETTER_EDIT'), async (req, res) => {
     try {
         const { title, html_content, text_content, cover_image, scheduled_at } = req.body;
 
@@ -43,7 +44,7 @@ router.post('/', async (req, res) => {
 });
 
 // 3. Update Newsletter
-router.put('/:id', async (req, res) => {
+router.put('/:id', requirePermission('NEWSLETTER_EDIT'), async (req, res) => {
     try {
         const { id } = req.params;
         const updates = req.body; // title, html_content, text_content, scheduled_at, cover_image
@@ -75,7 +76,7 @@ router.put('/:id', async (req, res) => {
 
 // 4. Get Single Newsletter (Optional but useful)
 // Not explicitly in task list but good for editing
-router.get('/:id', async (req, res) => {
+router.get('/:id', requirePermission('NEWSLETTER_EDIT'), async (req, res) => {
     try {
         const newsletter = await Newsletter.findById(req.params.id);
         if (!newsletter) return res.status(404).json({ error: 'Newsletter not found' });
@@ -86,7 +87,7 @@ router.get('/:id', async (req, res) => {
 });
 
 // 5. Send/Schedule
-router.post('/:id/send', async (req, res) => {
+router.post('/:id/send', requirePermission('NEWSLETTER_EDIT'), async (req, res) => {
     try {
         const { id } = req.params;
         const newsletter = await Newsletter.findById(id);

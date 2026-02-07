@@ -1,15 +1,15 @@
 const express = require('express');
 const router = express.Router();
 const Product = require('../models/Product');
-const auth = require('../middleware/auth');
+const requirePermission = require('../middleware/requirePermission');
 const { asyncHandler, sendSuccess, sendError } = require('../utils/response');
 
-router.get('/products', auth(['ADMIN']), asyncHandler(async (req, res, next) => {
+router.get('/products', requirePermission('PRODUCTS_VIEW'), asyncHandler(async (req, res, next) => {
     const products = await Product.find().sort({ created_at: -1 });
     sendSuccess(res, products);
 }));
 
-router.post('/products/approve', auth(['ADMIN']), asyncHandler(async (req, res, next) => {
+router.post('/products/approve', requirePermission('PRODUCTS_EDIT'), asyncHandler(async (req, res, next) => {
     const { product_id, status } = req.body;
     const product = await Product.findById(product_id);
     if (!product) return sendError(next, 'NOT_FOUND', 'Product not found', 404);

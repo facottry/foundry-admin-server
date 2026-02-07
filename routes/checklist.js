@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const ChecklistItem = require('../models/ChecklistItem');
-const auth = require('../middleware/auth');
+const auth = require('../middleware/adminAuth');
 
 // All checklist routes require ADMIN role
 router.use(auth(['ADMIN']));

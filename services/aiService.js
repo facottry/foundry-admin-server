@@ -35,7 +35,7 @@ Content length: 3-4 short updates.
  * @param {string} modelName - Model name (gemini-* or gpt-*)
  * @returns {Promise<{title: string, html_content: string, text_content: string}|null>}
  */
-async function generateNewsletterContent(customPrompt, modelName = 'gemini-1.5-flash') {
+async function generateNewsletterContent(customPrompt, modelName = 'gemini-2.0-flash') {
     const prompt = customPrompt || "Generate a daily newsletter about 'Best Practices for Launching Products'.";
 
     try {

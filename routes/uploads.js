@@ -16,6 +16,7 @@ const s3Client = new S3Client({
 });
 
 const BUCKET_NAME = process.env.R2_BUCKET_NAME || 'foundry-uploads';
+const requirePermission = require('../middleware/requirePermission');
 
 // Memory Storage (File buffer)
 const storage = multer.memoryStorage();
@@ -23,7 +24,7 @@ const upload = multer({ storage });
 
 // @route   POST /api/admin/uploads
 // @desc    Upload image to R2 (Private Bucket) -> Serve via Proxy
-router.post('/', upload.single('image'), async (req, res) => {
+router.post('/', requirePermission('IMAGEMANAGER_EDIT'), upload.single('image'), async (req, res) => {
     try {
         if (!req.file) {
             return res.status(400).json({ error: 'No image uploaded' });
