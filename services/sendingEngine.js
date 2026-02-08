@@ -126,7 +126,7 @@ async function sendEmailIndividual(to, newsletter, subscriberId) {
     }
 
     await transporter.sendMail({
-        from: process.env.EMAIL_FROM || '"Clicktory Hotlist" <newsletter@foundry.com>',
+        from: process.env.EMAIL_FROM || '"Clicktory Hotlist" <newsletter@clicktory.in>',
         to,
         subject: newsletter.title,
         text: fullText,

@@ -7,7 +7,7 @@ const User = require('../models/User');
 const EXPORT_DIR = path.join(__dirname, '../exports');
 const OUTPUT_FILE = path.join(EXPORT_DIR, `users_export_${Date.now()}.csv`);
 
-mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/foundry')
+mongoose.connect(process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/clicktory_database')
     .then(async () => {
         console.log('Connected to DB');
         console.log(`DB Name: ${mongoose.connection.name}`);

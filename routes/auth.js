@@ -77,7 +77,7 @@ router.post('/send-otp', asyncHandler(async (req, res, next) => {
     user.otp_expires = Date.now() + 10 * 60 * 1000;
     await user.save();
 
-    await sendEmail(email, 'Your Foundry OTP', `Your OTP code is ${otp}`);
+    await sendEmail(email, 'Your Clicktory OTP', `Your OTP code is ${otp}`);
 
     sendSuccess(res, { msg: 'OTP sent' });
 }));

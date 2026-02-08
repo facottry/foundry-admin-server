@@ -5,7 +5,7 @@ const { triggerJob } = require('../cron/AiScheduler');
 
 const JOB_ID = '69850a792060b20ac5cce758';
 
-mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/foundry')
+mongoose.connect(process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/clicktory_database')
     .then(async () => {
         console.log('Connected to DB');
         console.log(`DB Name: ${mongoose.connection.name}`);

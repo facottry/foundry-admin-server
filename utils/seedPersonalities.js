@@ -12,7 +12,7 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const Personality = require('../models/Personality');
 
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/foundryfoundry';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/clicktory_database';
 console.log('Connecting to:', MONGO_URI);
 
 const defaultPersonalities = [

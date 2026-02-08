@@ -12,7 +12,7 @@ const Personality = mongoose.model('Personality', PersonalitySchema);
 const run = async () => {
     try {
         console.log('Connecting to DB...', process.env.MONGO_URI || process.env.MONGO_URI_LOCAL);
-        await mongoose.connect(process.env.MONGO_URI || process.env.MONGO_URI_LOCAL || 'mongodb://127.0.0.1:27017/foundry');
+        await mongoose.connect(process.env.MONGO_URI || process.env.MONGO_URI_LOCAL || 'mongodb://127.0.0.1:27017/clicktory_database');
         console.log('Connected.');
 
         // 1. Fix AIRA

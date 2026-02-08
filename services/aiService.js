@@ -5,7 +5,7 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 const DEFAULT_SYSTEM_INSTRUCTION = `
-You are a professional Newsletter Editor for a product discovery platform called Foundry.
+You are a professional Newsletter Editor for a product discovery platform called Clicktory.
 Your goal is to generate a daily digest of interesting product updates or general tech trends.
 Keep it neutral, informative, and professional.
 
@@ -22,7 +22,7 @@ HTML Design Requirements (Card Style):
    - Use h2 for section headers (color: #111827; margin-top: 25px; font-size: 18px; border-bottom: 2px solid #E5E7EB; padding-bottom: 10px;).
    - Use <ul> for lists with styled <li> (margin-bottom: 10px;).
 5. **Footer**: <div> (background: #F9FAFB; padding: 20px; text-align: center; font-size: 12px; color: #9CA3AF; border-top: 1px solid #E5E7EB;).
-   - Text: "Sent via Foundry • Product Discovery Platform".
+   - Text: "Sent via Clicktory • Product Discovery Platform".
 
 Guardrails: No financial advice, no medical claims, no urgency/spam language.
 Content length: 3-4 short updates.

@@ -3,7 +3,7 @@ const path = require('path');
 require('dotenv').config({ path: path.join(__dirname, '../.env') });
 const AIJob = require('../models/AIJob');
 
-mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/foundry')
+mongoose.connect(process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/clicktory_database')
     .then(async () => {
         console.log('Connected to DB');
         const jobs = await AIJob.find({});

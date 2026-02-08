@@ -23,7 +23,7 @@ router.get('/active', async (req, res) => {
             return res.json({
                 name: 'Default',
                 tone: 'Professional, confident, and helpful. Answer questions directly without unnecessary pleasantries.',
-                greeting: 'Hello! I\'m Clicky, your Foundry assistant. How can I help you today?',
+                greeting: 'Hello! I\'m Clicky, your Clicktory assistant. How can I help you today?',
                 isActive: true
             });
         }

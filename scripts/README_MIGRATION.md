@@ -10,10 +10,10 @@
 ### Run Sync
 
 ```bash
-cd foundry/adminserver
+cd clicktory/adminserver
 
 # Set production MongoDB URI
-export PROD_MONGO_URI="mongodb+srv://username:password@cluster.mongodb.net/foundry"
+export PROD_MONGO_URI="mongodb+srv://username:password@cluster.mongodb.net/clicktory"
 
 # Run sync script
 node scripts/sync_checklist_to_prod.js
