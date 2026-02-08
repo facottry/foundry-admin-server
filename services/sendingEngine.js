@@ -92,7 +92,13 @@ async function sendEmailIndividual(to, newsletter, subscriberId) {
     // Generate Footer
     const unsubscribeLink = `${process.env.PUBLIC_URL || 'http://localhost:3000'}/newsletter/unsubscribe?id=${subscriberId}`;
     const homepageUrl = `${process.env.PUBLIC_URL || 'https://clicktory.in'}?utm_source=newsletter&utm_medium=email&utm_campaign=hotlist`;
-
+    const headerHTML = `
+    <div style="text-align: center; margin: 30px 0;">
+        <a href="${homepageUrl}" style="background-color: #000; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+            Explore Clicktory Hotlist
+        </a>
+    </div>
+    `
     // CTA Button
     const ctaHtml = `
         <div style="text-align: center; margin: 30px 0;">
@@ -110,11 +116,11 @@ async function sendEmailIndividual(to, newsletter, subscriberId) {
             <p>Sent via Clicktory Hotlist • Product Discovery Platform</p>
             <p>You received this email because you subscribed to our updates.</p>
             <p><a href="${unsubscribeLink}" style="color: #666;">Unsubscribe</a></p>
-            <p>Have Feedback for us : <a href="https://www.clicktory.in/feedback" style="color: #666;">https://www.clicktory.in/feedbac</a></p>
+            <p>Have Feedback for us : <a href="https://www.clicktory.in/feedback" style="color: #666;">https://www.clicktory.in/feedback</a></p>
         </footer>
     `;
 
-    const fullHtml = newsletter.html_content + footerHtml;
+    const fullHtml = headerHTML + newsletter.html_content + footerHtml;
 
     // Plain Text with Footer
     const footerText = `\n\n--\nExplore Clicktory: ${homepageUrl}\n\nUnsubscribe: ${unsubscribeLink}\nSent via Clicktory Hotlist`;
