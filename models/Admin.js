@@ -41,6 +41,12 @@ const AdminSchema = new mongoose.Schema({
         type: Boolean,
         default: true
     },
+    otp: {
+        type: String
+    },
+    otpExpiry: {
+        type: Date
+    },
     lastLoginAt: {
         type: Date
     },

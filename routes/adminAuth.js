@@ -18,6 +18,7 @@ const jwt = require('jsonwebtoken');
 const Admin = require('../models/Admin');
 const requireAdminAuth = require('../middleware/adminAuth');
 const { asyncHandler, sendSuccess, sendError } = require('../utils/response');
+const sendEmail = require('../utils/sendEmail');
 
 /**
  * @route   POST /api/admin/auth/login
@@ -142,6 +143,88 @@ router.put('/change-password', requireAdminAuth(), asyncHandler(async (req, res,
     await Admin.findByIdAndUpdate(req.admin._id, { passwordHash });
 
     sendSuccess(res, { message: 'Password updated successfully' });
+}));
+
+/**
+ * @route   POST /api/admin/auth/send-otp
+ * @desc    Send OTP for password reset
+ * @access  Public
+ */
+router.post('/send-otp', asyncHandler(async (req, res, next) => {
+    const { email } = req.body;
+
+    if (!email) {
+        return sendError(next, 'VALIDATION_ERROR', 'Email is required', 400);
+    }
+
+    const admin = await Admin.findOne({ email: email.toLowerCase() });
+
+    if (!admin) {
+        // Return success even if email not found to prevent enumeration
+        return sendSuccess(res, { message: 'OTP sent if email exists' });
+    }
+
+    // Generate 6-digit OTP
+    const otp = Math.floor(100000 + Math.random() * 900000).toString();
+    const expiry = new Date(Date.now() + 10 * 60 * 1000); // 10 minutes
+
+    admin.otp = otp;
+    admin.otpExpiry = expiry;
+    await admin.save();
+
+    // Send Email
+    try {
+        await sendEmail(
+            admin.email,
+            'Admin Password Reset OTP',
+            `Your OTP for password reset is: ${otp}. It expires in 10 minutes.`,
+            `<p>Your OTP for password reset is: <strong>${otp}</strong></p><p>It expires in 10 minutes.</p>`
+        );
+    } catch (err) {
+        console.error('Failed to send OTP email:', err);
+        return sendError(next, 'EMAIL_ERROR', 'Failed to send OTP email', 500);
+    }
+
+    sendSuccess(res, { message: 'OTP sent successfully' });
+}));
+
+/**
+ * @route   POST /api/admin/auth/reset-password
+ * @desc    Reset password using OTP
+ * @access  Public
+ */
+router.post('/reset-password', asyncHandler(async (req, res, next) => {
+    const { email, otp, newPassword } = req.body;
+
+    if (!email || !otp || !newPassword) {
+        return sendError(next, 'VALIDATION_ERROR', 'All fields are required', 400);
+    }
+
+    if (newPassword.length < 8) {
+        return sendError(next, 'VALIDATION_ERROR', 'Password must be at least 8 characters', 400);
+    }
+
+    const admin = await Admin.findOne({
+        email: email.toLowerCase(),
+        otp: otp,
+        otpExpiry: { $gt: Date.now() }
+    });
+
+    if (!admin) {
+        return sendError(next, 'AUTH_ERROR', 'Invalid or expired OTP', 400);
+    }
+
+    // Hash new password
+    const salt = await bcrypt.genSalt(10);
+    admin.passwordHash = await bcrypt.hash(newPassword, salt);
+
+    // Clear OTP
+    admin.otp = undefined;
+    admin.otpExpiry = undefined;
+
+    await admin.save();
+
+    sendSuccess(res, { message: 'Password reset successfully' });
 }));
 
 module.exports = router;

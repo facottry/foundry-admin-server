@@ -38,7 +38,7 @@ app.use('/api/admin/products', require('./routes/products')); // Product managem
 app.use('/api/admin/users', require('./routes/users')); // User management
 app.use('/api/admin/admins', require('./routes/admins')); // Admin management (SUPER_ADMIN only)
 
-app.use('/api/admin/config', require('./routes/config')); // System Config
+app.use('/api/admin/promotion-config', require('./routes/config')); // System Config
 app.use('/api/admin/personalities', require('./routes/personalities')); // Bot Personalities
 app.use('/api/admin/checklist', require('./routes/checklist')); // Checklist Manager
 app.use('/api/products', require('./routes/products'));
